@@ -17167,3 +17167,536 @@ Completed in 0.00430 (232 reqs/sec) | DB: 0.00079 (18%) | 200 OK [http://localho
  WHERE type = 'table' AND NOT name = 'sqlite_sequence'
 [0m
   [4;36;1mSQL (0.000576)[0m   [0;1mSELECT DISTINCT class_name FROM pages WHERE class_name <> '' AND class_name IS NOT NULL[0m
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2009-03-14 01:39:38) [GET]
+  Parameters: {"url"=>["about"], "action"=>"show_page", "controller"=>"site"}
+  [4;35;1mRadiant::Config Load (0.000736)[0m   [0mSELECT * FROM "config" WHERE ("config"."key" = 'dev.host') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "config" WHERE ("config"."key" = 'dev.host') LIMIT 1[0m
+  [4;35;1mPage Load (0.000470)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."parent_id" IS NULL) LIMIT 1[0m
+  [4;36;1mPage Load (0.001018)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."slug" = 'about') AND ("pages".parent_id = 1) ORDER BY virtual DESC, title ASC LIMIT 1[0m
+  [4;35;1mPage Load (0.000362)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+  [4;36;1mLayout Load (0.000355)[0m   [0;1mSELECT * FROM "layouts" WHERE ("layouts"."id" = 1) ORDER BY name[0m
+  [4;35;1mSnippet Load (0.000621)[0m   [0mSELECT * FROM "snippets" WHERE ("snippets"."name" = 'header') LIMIT 1[0m
+  [4;36;1mSnippet Load (0.000401)[0m   [0;1mSELECT * FROM "snippets" WHERE ("snippets"."name" = 'navigation') LIMIT 1[0m
+  [4;35;1mPagePart Load (0.000888)[0m   [0mSELECT * FROM "page_parts" WHERE ("page_parts".page_id = 2) ORDER BY id[0m
+  [4;36;1mPagePart Load (0.000265)[0m   [0;1mSELECT * FROM "page_parts" WHERE ("page_parts"."name" = 'body') AND ("page_parts".page_id = 2) ORDER BY id LIMIT 1[0m
+  [4;35;1mPagePart Load (0.000403)[0m   [0mSELECT * FROM "page_parts" WHERE ("page_parts"."name" = 'extended') AND ("page_parts".page_id = 2) ORDER BY id LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "page_parts" WHERE ("page_parts"."name" = 'extended') AND ("page_parts".page_id = 2) ORDER BY id LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "page_parts" WHERE ("page_parts"."name" = 'extended') AND ("page_parts".page_id = 2) ORDER BY id LIMIT 1[0m
+  [4;36;1mPagePart Load (0.000245)[0m   [0;1mSELECT * FROM "page_parts" WHERE ("page_parts"."name" = 'sidebar') AND ("page_parts".page_id = 2) ORDER BY id LIMIT 1[0m
+  [4;35;1mPagePart Load (0.000877)[0m   [0mSELECT * FROM "page_parts" WHERE ("page_parts".page_id = 1) ORDER BY id[0m
+  [4;36;1mPagePart Load (0.000143)[0m   [0;1mSELECT * FROM "page_parts" WHERE ("page_parts"."name" = 'sidebar') AND ("page_parts".page_id = 1) ORDER BY id LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "page_parts" WHERE ("page_parts"."name" = 'sidebar') AND ("page_parts".page_id = 1) ORDER BY id LIMIT 1[0m
+  [4;36;1mSnippet Load (0.000290)[0m   [0;1mSELECT * FROM "snippets" WHERE ("snippets"."name" = 'footer') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "config" WHERE ("config"."key" = 'dev.host') LIMIT 1[0m
+Cached page: /Users/burke/src/facultyclub/cache/about (0.00065)
+Completed in 0.14045 (7 reqs/sec) | DB: 0.00707 (5%) | 200 OK [http://localhost/about]
+  [4;36;1mSQL (0.000551)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000600)[0m   [0mSELECT DISTINCT class_name FROM pages WHERE class_name <> '' AND class_name IS NOT NULL[0m
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2009-03-14 01:39:43) [GET]
+  Parameters: {"url"=>"/", "action"=>"show_page", "controller"=>"site"}
+  [4;36;1mRadiant::Config Load (0.000909)[0m   [0;1mSELECT * FROM "config" WHERE ("config"."key" = 'dev.host') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "config" WHERE ("config"."key" = 'dev.host') LIMIT 1[0m
+  [4;36;1mPage Load (0.000392)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."parent_id" IS NULL) LIMIT 1[0m
+  [4;35;1mLayout Load (0.000368)[0m   [0mSELECT * FROM "layouts" WHERE ("layouts"."id" = 1) ORDER BY name[0m
+  [4;36;1mSnippet Load (0.000465)[0m   [0;1mSELECT * FROM "snippets" WHERE ("snippets"."name" = 'header') LIMIT 1[0m
+  [4;35;1mSnippet Load (0.000381)[0m   [0mSELECT * FROM "snippets" WHERE ("snippets"."name" = 'navigation') LIMIT 1[0m
+  [4;36;1mPagePart Load (0.000935)[0m   [0;1mSELECT * FROM "page_parts" WHERE ("page_parts".page_id = 1) ORDER BY id[0m
+  [4;35;1mPagePart Load (0.000226)[0m   [0mSELECT * FROM "page_parts" WHERE ("page_parts"."name" = 'body') AND ("page_parts".page_id = 1) ORDER BY id LIMIT 1[0m
+  [4;36;1mPagePart Load (0.000346)[0m   [0;1mSELECT * FROM "page_parts" WHERE ("page_parts"."name" = 'extended') AND ("page_parts".page_id = 1) ORDER BY id LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "page_parts" WHERE ("page_parts"."name" = 'extended') AND ("page_parts".page_id = 1) ORDER BY id LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "page_parts" WHERE ("page_parts"."name" = 'extended') AND ("page_parts".page_id = 1) ORDER BY id LIMIT 1[0m
+  [4;35;1mPagePart Load (0.000236)[0m   [0mSELECT * FROM "page_parts" WHERE ("page_parts"."name" = 'sidebar') AND ("page_parts".page_id = 1) ORDER BY id LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "page_parts" WHERE ("page_parts"."name" = 'sidebar') AND ("page_parts".page_id = 1) ORDER BY id LIMIT 1[0m
+  [4;35;1mSnippet Load (0.000284)[0m   [0mSELECT * FROM "snippets" WHERE ("snippets"."name" = 'footer') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "config" WHERE ("config"."key" = 'dev.host') LIMIT 1[0m
+Cached page: /Users/burke/src/facultyclub/cache/_site-root (0.00082)
+Completed in 0.13718 (7 reqs/sec) | DB: 0.00454 (3%) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.000446)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000575)[0m   [0;1mSELECT DISTINCT class_name FROM pages WHERE class_name <> '' AND class_name IS NOT NULL[0m
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2009-03-14 01:39:48) [GET]
+  Parameters: {"url"=>["contact"], "action"=>"show_page", "controller"=>"site"}
+  [4;35;1mRadiant::Config Load (0.000779)[0m   [0mSELECT * FROM "config" WHERE ("config"."key" = 'dev.host') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "config" WHERE ("config"."key" = 'dev.host') LIMIT 1[0m
+  [4;35;1mPage Load (0.000414)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."parent_id" IS NULL) LIMIT 1[0m
+  [4;36;1mPage Load (0.000933)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."slug" = 'contact') AND ("pages".parent_id = 1) ORDER BY virtual DESC, title ASC LIMIT 1[0m
+  [4;35;1mPage Load (0.000343)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+  [4;36;1mLayout Load (0.000309)[0m   [0;1mSELECT * FROM "layouts" WHERE ("layouts"."id" = 1) ORDER BY name[0m
+  [4;35;1mSnippet Load (0.000435)[0m   [0mSELECT * FROM "snippets" WHERE ("snippets"."name" = 'header') LIMIT 1[0m
+  [4;36;1mSnippet Load (0.000396)[0m   [0;1mSELECT * FROM "snippets" WHERE ("snippets"."name" = 'navigation') LIMIT 1[0m
+  [4;35;1mPagePart Load (0.001143)[0m   [0mSELECT * FROM "page_parts" WHERE ("page_parts".page_id = 7) ORDER BY id[0m
+  [4;36;1mPagePart Load (0.000345)[0m   [0;1mSELECT * FROM "page_parts" WHERE ("page_parts"."name" = 'body') AND ("page_parts".page_id = 7) ORDER BY id LIMIT 1[0m
+  [4;35;1mPagePart Load (0.000406)[0m   [0mSELECT * FROM "page_parts" WHERE ("page_parts"."name" = 'extended') AND ("page_parts".page_id = 7) ORDER BY id LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "page_parts" WHERE ("page_parts"."name" = 'extended') AND ("page_parts".page_id = 7) ORDER BY id LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "page_parts" WHERE ("page_parts"."name" = 'extended') AND ("page_parts".page_id = 7) ORDER BY id LIMIT 1[0m
+  [4;36;1mPagePart Load (0.000239)[0m   [0;1mSELECT * FROM "page_parts" WHERE ("page_parts"."name" = 'sidebar') AND ("page_parts".page_id = 7) ORDER BY id LIMIT 1[0m
+  [4;35;1mPagePart Load (0.000758)[0m   [0mSELECT * FROM "page_parts" WHERE ("page_parts".page_id = 1) ORDER BY id[0m
+  [4;36;1mPagePart Load (0.000152)[0m   [0;1mSELECT * FROM "page_parts" WHERE ("page_parts"."name" = 'sidebar') AND ("page_parts".page_id = 1) ORDER BY id LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "page_parts" WHERE ("page_parts"."name" = 'sidebar') AND ("page_parts".page_id = 1) ORDER BY id LIMIT 1[0m
+  [4;36;1mSnippet Load (0.000267)[0m   [0;1mSELECT * FROM "snippets" WHERE ("snippets"."name" = 'footer') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "config" WHERE ("config"."key" = 'dev.host') LIMIT 1[0m
+Cached page: /Users/burke/src/facultyclub/cache/contact (0.00075)
+Completed in 0.13491 (7 reqs/sec) | DB: 0.00692 (5%) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.000469)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000632)[0m   [0mSELECT DISTINCT class_name FROM pages WHERE class_name <> '' AND class_name IS NOT NULL[0m
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2009-03-14 01:43:31) [GET]
+  Parameters: {"url"=>["rss"], "action"=>"show_page", "controller"=>"site"}
+  [4;36;1mRadiant::Config Load (0.001006)[0m   [0;1mSELECT * FROM "config" WHERE ("config"."key" = 'dev.host') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "config" WHERE ("config"."key" = 'dev.host') LIMIT 1[0m
+  [4;36;1mPage Load (0.000397)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."parent_id" IS NULL) LIMIT 1[0m
+  [4;35;1mPage Load (0.000671)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."slug" = 'rss') AND ("pages".parent_id = 1) ORDER BY virtual DESC, title ASC LIMIT 1[0m
+  [4;36;1mPage Load (0.001672)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages".parent_id = 1) ORDER BY virtual DESC, title ASC[0m
+  [4;35;1mPage Load (0.000720)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+  [4;36;1mPage Load (0.000748)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages".parent_id = 1 AND (status_id = 100 and (class_name = 'FileNotFoundPage'))) ORDER BY virtual DESC, title ASC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering site/not_found (404)
+  [4;35;1mRadiant::Config Load (0.000270)[0m   [0mSELECT * FROM "config" WHERE ("config"."key" = 'admin.title') LIMIT 1[0m
+  [4;36;1mRadiant::Config Load (0.000179)[0m   [0;1mSELECT * FROM "config" WHERE ("config"."key" = 'admin.subtitle') LIMIT 1[0m
+Completed in 0.04216 (23 reqs/sec) | Rendering: 0.00371 (8%) | DB: 0.00566 (13%) | 404 Not Found [http://localhost/rss/]
+  [4;35;1mSQL (0.000450)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000627)[0m   [0;1mSELECT DISTINCT class_name FROM pages WHERE class_name <> '' AND class_name IS NOT NULL[0m
+
+
+Processing Admin::WelcomeController#index (for 127.0.0.1 at 2009-03-14 01:46:37) [GET]
+  Session ID: BAh7CDoMY3NyZl9pZCIlMjI2MGFiYzYxOWZkMDY3YmU5MzcwNWRjYjg2ZTI1
+ODciDHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxh
+c2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiJFlvdXIgcGFnZSBoYXMgYmVlbiBz
+YXZlZCBiZWxvdy4GOgpAdXNlZHsGOwdU--d55db2895d8444470ef61311dd7c9da402fe6df8
+  Parameters: {"action"=>"index", "controller"=>"admin/welcome"}
+  [4;35;1mUser Load (0.000339)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) ORDER BY name[0m
+Redirected to http://localhost:3000/admin/pages
+Completed in 0.00562 (177 reqs/sec) | DB: 0.00034 (6%) | 302 Found [http://localhost/admin]
+  [4;36;1mSQL (0.000447)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000603)[0m   [0mSELECT DISTINCT class_name FROM pages WHERE class_name <> '' AND class_name IS NOT NULL[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-03-14 01:46:38) [GET]
+  Session ID: BAh7CDoMY3NyZl9pZCIlMjI2MGFiYzYxOWZkMDY3YmU5MzcwNWRjYjg2ZTI1
+ODciDHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxh
+c2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--caefd95e1f8864cda2a15d0aabdeed3b56d8eb20
+  Parameters: {"action"=>"index", "controller"=>"admin/pages"}
+  [4;36;1mUser Load (0.000353)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."session_token" = 'da033e90cc132a425773369ae2f5e92fc433608c') LIMIT 1[0m
+  [4;35;1mRadiant::Config Load (0.000242)[0m   [0mSELECT * FROM "config" WHERE ("config"."key" = 'session_timeout') LIMIT 1[0m
+Cookie set: session_token=da033e90cc132a425773369ae2f5e92fc433608c; path=/; expires=Sat, 28 Mar 2009 06:46:38 GMT
+  [4;36;1mPage Load (0.001622)[0m   [0;1mSELECT * FROM "pages" [0m
+  [4;35;1mPage Load (0.000415)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."parent_id" IS NULL) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/pages/index
+  [4;36;1mSQL (0.000244)[0m   [0;1mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 1) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 1) [0m
+  [4;36;1mPage Load (0.001925)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages".parent_id = 1) ORDER BY virtual DESC, title ASC[0m
+  [4;35;1mSQL (0.000177)[0m   [0mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 2) [0m
+  [4;36;1mPage Load (0.000402)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+Rendered admin/pages/_node (0.00552)
+  [4;35;1mSQL (0.000221)[0m   [0mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 3) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+Rendered admin/pages/_node (0.00426)
+  [4;35;1mSQL (0.000227)[0m   [0mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 7) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+Rendered admin/pages/_node (0.00364)
+  [4;35;1mSQL (0.000196)[0m   [0mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 5) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+Rendered admin/pages/_node (0.00393)
+  [4;35;1mSQL (0.000218)[0m   [0mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 8) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 8) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+  [4;36;1mPage Load (0.001123)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages".parent_id = 8) ORDER BY virtual DESC, title ASC[0m
+  [4;35;1mSQL (0.000246)[0m   [0mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 9) [0m
+  [4;36;1mPage Load (0.000381)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 8) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+Rendered admin/pages/_node (0.00694)
+  [4;36;1mSQL (0.000287)[0m   [0;1mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 10) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 8) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+Rendered admin/pages/_node (0.00512)
+Rendered admin/pages/_node (0.01997)
+  [4;35;1mSQL (0.000243)[0m   [0mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 4) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+Rendered admin/pages/_node (0.00364)
+  [4;35;1mSQL (0.000204)[0m   [0mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 6) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+Rendered admin/pages/_node (0.00356)
+Rendered admin/pages/_node (0.06255)
+  [4;35;1mRadiant::Config Load (0.000297)[0m   [0mSELECT * FROM "config" WHERE ("config"."key" = 'admin.title') LIMIT 1[0m
+  [4;36;1mRadiant::Config Load (0.000182)[0m   [0;1mSELECT * FROM "config" WHERE ("config"."key" = 'admin.subtitle') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "config" WHERE ("config"."key" = 'admin.title') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "config" WHERE ("config"."key" = 'admin.subtitle') LIMIT 1[0m
+Completed in 0.08270 (12 reqs/sec) | Rendering: 0.06328 (76%) | DB: 0.00921 (11%) | 200 OK [http://localhost/admin/pages]
+  [4;35;1mSQL (0.000522)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000630)[0m   [0;1mSELECT DISTINCT class_name FROM pages WHERE class_name <> '' AND class_name IS NOT NULL[0m
+
+
+Processing Admin::UsersController#index (for 127.0.0.1 at 2009-03-14 01:46:50) [GET]
+  Session ID: BAh7CDoMY3NyZl9pZCIlMjI2MGFiYzYxOWZkMDY3YmU5MzcwNWRjYjg2ZTI1
+ODciDHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxh
+c2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--caefd95e1f8864cda2a15d0aabdeed3b56d8eb20
+  Parameters: {"action"=>"index", "controller"=>"admin/users"}
+  [4;35;1mUser Load (0.000330)[0m   [0mSELECT * FROM "users" WHERE ("users"."session_token" = 'da033e90cc132a425773369ae2f5e92fc433608c') LIMIT 1[0m
+  [4;36;1mRadiant::Config Load (0.000205)[0m   [0;1mSELECT * FROM "config" WHERE ("config"."key" = 'session_timeout') LIMIT 1[0m
+Cookie set: session_token=da033e90cc132a425773369ae2f5e92fc433608c; path=/; expires=Sat, 28 Mar 2009 06:46:50 GMT
+  [4;35;1mUser Load (0.251230)[0m   [0mSELECT * FROM "users" ORDER BY name[0m
+Rendering template within layouts/application
+Rendering admin/users/index
+  [4;36;1mRadiant::Config Load (0.000321)[0m   [0;1mSELECT * FROM "config" WHERE ("config"."key" = 'admin.title') LIMIT 1[0m
+  [4;35;1mRadiant::Config Load (0.000176)[0m   [0mSELECT * FROM "config" WHERE ("config"."key" = 'admin.subtitle') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "config" WHERE ("config"."key" = 'admin.title') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "config" WHERE ("config"."key" = 'admin.subtitle') LIMIT 1[0m
+Completed in 0.27551 (3 reqs/sec) | Rendering: 0.01289 (4%) | DB: 0.25226 (91%) | 200 OK [http://localhost/admin/users]
+  [4;36;1mSQL (0.000504)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000589)[0m   [0mSELECT DISTINCT class_name FROM pages WHERE class_name <> '' AND class_name IS NOT NULL[0m
+
+
+Processing Admin::ExtensionsController#index (for 127.0.0.1 at 2009-03-14 01:48:21) [GET]
+  Session ID: BAh7CDoMY3NyZl9pZCIlMjI2MGFiYzYxOWZkMDY3YmU5MzcwNWRjYjg2ZTI1
+ODciDHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxh
+c2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--caefd95e1f8864cda2a15d0aabdeed3b56d8eb20
+  Parameters: {"action"=>"index", "controller"=>"admin/extensions"}
+  [4;36;1mUser Load (0.000467)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."session_token" = 'da033e90cc132a425773369ae2f5e92fc433608c') LIMIT 1[0m
+  [4;35;1mRadiant::Config Load (0.000346)[0m   [0mSELECT * FROM "config" WHERE ("config"."key" = 'session_timeout') LIMIT 1[0m
+Cookie set: session_token=da033e90cc132a425773369ae2f5e92fc433608c; path=/; expires=Sat, 28 Mar 2009 06:48:21 GMT
+Rendering template within layouts/application
+Rendering admin/extensions/index
+  [4;36;1mRadiant::Config Load (0.000316)[0m   [0;1mSELECT * FROM "config" WHERE ("config"."key" = 'admin.title') LIMIT 1[0m
+  [4;35;1mRadiant::Config Load (0.000198)[0m   [0mSELECT * FROM "config" WHERE ("config"."key" = 'admin.subtitle') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "config" WHERE ("config"."key" = 'admin.title') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "config" WHERE ("config"."key" = 'admin.subtitle') LIMIT 1[0m
+Completed in 0.12010 (8 reqs/sec) | Rendering: 0.01384 (11%) | DB: 0.00133 (1%) | 200 OK [http://localhost/admin/extensions]
+  [4;36;1mSQL (0.000529)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000593)[0m   [0mSELECT DISTINCT class_name FROM pages WHERE class_name <> '' AND class_name IS NOT NULL[0m
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2009-03-14 02:13:33) [GET]
+  Parameters: {"url"=>["rss"], "action"=>"show_page", "controller"=>"site"}
+  [4;36;1mRadiant::Config Load (0.000723)[0m   [0;1mSELECT * FROM "config" WHERE ("config"."key" = 'dev.host') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "config" WHERE ("config"."key" = 'dev.host') LIMIT 1[0m
+  [4;36;1mPage Load (0.000389)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."parent_id" IS NULL) LIMIT 1[0m
+  [4;35;1mPage Load (0.000690)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."slug" = 'rss') AND ("pages".parent_id = 1) ORDER BY virtual DESC, title ASC LIMIT 1[0m
+  [4;36;1mPage Load (0.001553)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages".parent_id = 1) ORDER BY virtual DESC, title ASC[0m
+  [4;35;1mPage Load (0.000343)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+  [4;36;1mPage Load (0.000682)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages".parent_id = 1 AND (status_id = 100 and (class_name = 'FileNotFoundPage'))) ORDER BY virtual DESC, title ASC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering site/not_found (404)
+  [4;35;1mRadiant::Config Load (0.000238)[0m   [0mSELECT * FROM "config" WHERE ("config"."key" = 'admin.title') LIMIT 1[0m
+  [4;36;1mRadiant::Config Load (0.000180)[0m   [0;1mSELECT * FROM "config" WHERE ("config"."key" = 'admin.subtitle') LIMIT 1[0m
+Completed in 0.03868 (25 reqs/sec) | Rendering: 0.00295 (7%) | DB: 0.00480 (12%) | 404 Not Found [http://localhost/rss/]
+  [4;35;1mSQL (0.000459)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000551)[0m   [0;1mSELECT DISTINCT class_name FROM pages WHERE class_name <> '' AND class_name IS NOT NULL[0m
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2009-03-14 02:43:35) [GET]
+  Parameters: {"url"=>["rss"], "action"=>"show_page", "controller"=>"site"}
+  [4;35;1mRadiant::Config Load (0.000765)[0m   [0mSELECT * FROM "config" WHERE ("config"."key" = 'dev.host') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "config" WHERE ("config"."key" = 'dev.host') LIMIT 1[0m
+  [4;35;1mPage Load (0.000417)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."parent_id" IS NULL) LIMIT 1[0m
+  [4;36;1mPage Load (0.000770)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."slug" = 'rss') AND ("pages".parent_id = 1) ORDER BY virtual DESC, title ASC LIMIT 1[0m
+  [4;35;1mPage Load (0.001652)[0m   [0mSELECT * FROM "pages" WHERE ("pages".parent_id = 1) ORDER BY virtual DESC, title ASC[0m
+  [4;36;1mPage Load (0.000348)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+  [4;35;1mPage Load (0.000690)[0m   [0mSELECT * FROM "pages" WHERE ("pages".parent_id = 1 AND (status_id = 100 and (class_name = 'FileNotFoundPage'))) ORDER BY virtual DESC, title ASC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering site/not_found (404)
+  [4;36;1mRadiant::Config Load (0.000247)[0m   [0;1mSELECT * FROM "config" WHERE ("config"."key" = 'admin.title') LIMIT 1[0m
+  [4;35;1mRadiant::Config Load (0.000237)[0m   [0mSELECT * FROM "config" WHERE ("config"."key" = 'admin.subtitle') LIMIT 1[0m
+Completed in 0.04042 (24 reqs/sec) | Rendering: 0.00292 (7%) | DB: 0.00513 (12%) | 404 Not Found [http://localhost/rss/]
+  [4;36;1mSQL (0.000484)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000618)[0m   [0mSELECT DISTINCT class_name FROM pages WHERE class_name <> '' AND class_name IS NOT NULL[0m
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2009-03-14 03:13:37) [GET]
+  Parameters: {"url"=>["rss"], "action"=>"show_page", "controller"=>"site"}
+  [4;36;1mRadiant::Config Load (0.000715)[0m   [0;1mSELECT * FROM "config" WHERE ("config"."key" = 'dev.host') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "config" WHERE ("config"."key" = 'dev.host') LIMIT 1[0m
+  [4;36;1mPage Load (0.000396)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."parent_id" IS NULL) LIMIT 1[0m
+  [4;35;1mPage Load (0.001712)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."slug" = 'rss') AND ("pages".parent_id = 1) ORDER BY virtual DESC, title ASC LIMIT 1[0m
+  [4;36;1mPage Load (0.001654)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages".parent_id = 1) ORDER BY virtual DESC, title ASC[0m
+  [4;35;1mPage Load (0.000423)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+  [4;36;1mPage Load (0.000808)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages".parent_id = 1 AND (status_id = 100 and (class_name = 'FileNotFoundPage'))) ORDER BY virtual DESC, title ASC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering site/not_found (404)
+  [4;35;1mRadiant::Config Load (0.000258)[0m   [0mSELECT * FROM "config" WHERE ("config"."key" = 'admin.title') LIMIT 1[0m
+  [4;36;1mRadiant::Config Load (0.000178)[0m   [0;1mSELECT * FROM "config" WHERE ("config"."key" = 'admin.subtitle') LIMIT 1[0m
+Completed in 0.04414 (22 reqs/sec) | Rendering: 0.00313 (7%) | DB: 0.00614 (13%) | 404 Not Found [http://localhost/rss/]
+  [4;35;1mSQL (0.000437)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000598)[0m   [0;1mSELECT DISTINCT class_name FROM pages WHERE class_name <> '' AND class_name IS NOT NULL[0m
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2009-03-14 03:38:40) [GET]
+  Parameters: {"url"=>"/", "action"=>"show_page", "controller"=>"site"}
+  [4;35;1mRadiant::Config Load (0.002750)[0m   [0mSELECT * FROM "config" WHERE ("config"."key" = 'dev.host') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "config" WHERE ("config"."key" = 'dev.host') LIMIT 1[0m
+  [4;35;1mPage Load (0.001286)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."parent_id" IS NULL) LIMIT 1[0m
+  [4;36;1mLayout Load (0.000822)[0m   [0;1mSELECT * FROM "layouts" WHERE ("layouts"."id" = 1) ORDER BY name[0m
+  [4;35;1mSnippet Load (0.009718)[0m   [0mSELECT * FROM "snippets" WHERE ("snippets"."name" = 'header') LIMIT 1[0m
+  [4;36;1mSnippet Load (0.000987)[0m   [0;1mSELECT * FROM "snippets" WHERE ("snippets"."name" = 'navigation') LIMIT 1[0m
+  [4;35;1mPagePart Load (0.000914)[0m   [0mSELECT * FROM "page_parts" WHERE ("page_parts".page_id = 1) ORDER BY id[0m
+  [4;36;1mPagePart Load (0.000230)[0m   [0;1mSELECT * FROM "page_parts" WHERE ("page_parts"."name" = 'body') AND ("page_parts".page_id = 1) ORDER BY id LIMIT 1[0m
+  [4;35;1mPagePart Load (0.000368)[0m   [0mSELECT * FROM "page_parts" WHERE ("page_parts"."name" = 'extended') AND ("page_parts".page_id = 1) ORDER BY id LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "page_parts" WHERE ("page_parts"."name" = 'extended') AND ("page_parts".page_id = 1) ORDER BY id LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "page_parts" WHERE ("page_parts"."name" = 'extended') AND ("page_parts".page_id = 1) ORDER BY id LIMIT 1[0m
+  [4;36;1mPagePart Load (0.000238)[0m   [0;1mSELECT * FROM "page_parts" WHERE ("page_parts"."name" = 'sidebar') AND ("page_parts".page_id = 1) ORDER BY id LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "page_parts" WHERE ("page_parts"."name" = 'sidebar') AND ("page_parts".page_id = 1) ORDER BY id LIMIT 1[0m
+  [4;36;1mSnippet Load (0.000285)[0m   [0;1mSELECT * FROM "snippets" WHERE ("snippets"."name" = 'footer') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "config" WHERE ("config"."key" = 'dev.host') LIMIT 1[0m
+Cached page: /Users/burke/src/facultyclub/cache/_site-root (0.00070)
+Completed in 0.18623 (5 reqs/sec) | DB: 0.01760 (9%) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.000455)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000595)[0m   [0mSELECT DISTINCT class_name FROM pages WHERE class_name <> '' AND class_name IS NOT NULL[0m
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2009-03-14 03:42:18) [GET]
+  Parameters: {"url"=>["about"], "action"=>"show_page", "controller"=>"site"}
+  [4;36;1mRadiant::Config Load (0.000727)[0m   [0;1mSELECT * FROM "config" WHERE ("config"."key" = 'dev.host') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "config" WHERE ("config"."key" = 'dev.host') LIMIT 1[0m
+  [4;36;1mPage Load (0.000702)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."parent_id" IS NULL) LIMIT 1[0m
+  [4;35;1mPage Load (0.001227)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."slug" = 'about') AND ("pages".parent_id = 1) ORDER BY virtual DESC, title ASC LIMIT 1[0m
+  [4;36;1mPage Load (0.000451)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+  [4;35;1mLayout Load (0.000305)[0m   [0mSELECT * FROM "layouts" WHERE ("layouts"."id" = 1) ORDER BY name[0m
+  [4;36;1mSnippet Load (0.000346)[0m   [0;1mSELECT * FROM "snippets" WHERE ("snippets"."name" = 'header') LIMIT 1[0m
+  [4;35;1mSnippet Load (0.000481)[0m   [0mSELECT * FROM "snippets" WHERE ("snippets"."name" = 'navigation') LIMIT 1[0m
+  [4;36;1mPagePart Load (0.011348)[0m   [0;1mSELECT * FROM "page_parts" WHERE ("page_parts".page_id = 2) ORDER BY id[0m
+  [4;35;1mPagePart Load (0.000322)[0m   [0mSELECT * FROM "page_parts" WHERE ("page_parts"."name" = 'body') AND ("page_parts".page_id = 2) ORDER BY id LIMIT 1[0m
+  [4;36;1mPagePart Load (0.000355)[0m   [0;1mSELECT * FROM "page_parts" WHERE ("page_parts"."name" = 'extended') AND ("page_parts".page_id = 2) ORDER BY id LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "page_parts" WHERE ("page_parts"."name" = 'extended') AND ("page_parts".page_id = 2) ORDER BY id LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "page_parts" WHERE ("page_parts"."name" = 'extended') AND ("page_parts".page_id = 2) ORDER BY id LIMIT 1[0m
+  [4;35;1mPagePart Load (0.000285)[0m   [0mSELECT * FROM "page_parts" WHERE ("page_parts"."name" = 'sidebar') AND ("page_parts".page_id = 2) ORDER BY id LIMIT 1[0m
+  [4;36;1mPagePart Load (0.000778)[0m   [0;1mSELECT * FROM "page_parts" WHERE ("page_parts".page_id = 1) ORDER BY id[0m
+  [4;35;1mPagePart Load (0.000152)[0m   [0mSELECT * FROM "page_parts" WHERE ("page_parts"."name" = 'sidebar') AND ("page_parts".page_id = 1) ORDER BY id LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "page_parts" WHERE ("page_parts"."name" = 'sidebar') AND ("page_parts".page_id = 1) ORDER BY id LIMIT 1[0m
+  [4;35;1mSnippet Load (0.000267)[0m   [0mSELECT * FROM "snippets" WHERE ("snippets"."name" = 'footer') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "config" WHERE ("config"."key" = 'dev.host') LIMIT 1[0m
+Cached page: /Users/burke/src/facultyclub/cache/about (0.00066)
+Completed in 0.17111 (5 reqs/sec) | DB: 0.01775 (10%) | 200 OK [http://localhost/about]
+  [4;35;1mSQL (0.000442)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.001300)[0m   [0;1mSELECT DISTINCT class_name FROM pages WHERE class_name <> '' AND class_name IS NOT NULL[0m
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2009-03-14 13:19:45) [GET]
+  Parameters: {"url"=>["rss"], "action"=>"show_page", "controller"=>"site"}
+  [4;35;1mRadiant::Config Load (0.000722)[0m   [0mSELECT * FROM "config" WHERE ("config"."key" = 'dev.host') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "config" WHERE ("config"."key" = 'dev.host') LIMIT 1[0m
+  [4;35;1mPage Load (0.000405)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."parent_id" IS NULL) LIMIT 1[0m
+  [4;36;1mPage Load (0.000673)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."slug" = 'rss') AND ("pages".parent_id = 1) ORDER BY virtual DESC, title ASC LIMIT 1[0m
+  [4;35;1mPage Load (0.001561)[0m   [0mSELECT * FROM "pages" WHERE ("pages".parent_id = 1) ORDER BY virtual DESC, title ASC[0m
+  [4;36;1mPage Load (0.000341)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+  [4;35;1mPage Load (0.000690)[0m   [0mSELECT * FROM "pages" WHERE ("pages".parent_id = 1 AND (status_id = 100 and (class_name = 'FileNotFoundPage'))) ORDER BY virtual DESC, title ASC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering site/not_found (404)
+  [4;36;1mRadiant::Config Load (0.000291)[0m   [0;1mSELECT * FROM "config" WHERE ("config"."key" = 'admin.title') LIMIT 1[0m
+  [4;35;1mRadiant::Config Load (0.000213)[0m   [0mSELECT * FROM "config" WHERE ("config"."key" = 'admin.subtitle') LIMIT 1[0m
+Completed in 0.06380 (15 reqs/sec) | Rendering: 0.02734 (42%) | DB: 0.00490 (7%) | 404 Not Found [http://localhost/rss/]
+  [4;36;1mSQL (0.000461)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000620)[0m   [0mSELECT DISTINCT class_name FROM pages WHERE class_name <> '' AND class_name IS NOT NULL[0m
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2009-03-14 13:31:46) [GET]
+  Parameters: {"url"=>"/", "action"=>"show_page", "controller"=>"site"}
+  [4;36;1mRadiant::Config Load (0.000708)[0m   [0;1mSELECT * FROM "config" WHERE ("config"."key" = 'dev.host') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "config" WHERE ("config"."key" = 'dev.host') LIMIT 1[0m
+  [4;36;1mPage Load (0.000455)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."parent_id" IS NULL) LIMIT 1[0m
+  [4;35;1mLayout Load (0.000307)[0m   [0mSELECT * FROM "layouts" WHERE ("layouts"."id" = 1) ORDER BY name[0m
+  [4;36;1mSnippet Load (0.000337)[0m   [0;1mSELECT * FROM "snippets" WHERE ("snippets"."name" = 'header') LIMIT 1[0m
+  [4;35;1mSnippet Load (0.000377)[0m   [0mSELECT * FROM "snippets" WHERE ("snippets"."name" = 'navigation') LIMIT 1[0m
+  [4;36;1mPagePart Load (0.000903)[0m   [0;1mSELECT * FROM "page_parts" WHERE ("page_parts".page_id = 1) ORDER BY id[0m
+  [4;35;1mPagePart Load (0.000230)[0m   [0mSELECT * FROM "page_parts" WHERE ("page_parts"."name" = 'body') AND ("page_parts".page_id = 1) ORDER BY id LIMIT 1[0m
+  [4;36;1mPagePart Load (0.000367)[0m   [0;1mSELECT * FROM "page_parts" WHERE ("page_parts"."name" = 'extended') AND ("page_parts".page_id = 1) ORDER BY id LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "page_parts" WHERE ("page_parts"."name" = 'extended') AND ("page_parts".page_id = 1) ORDER BY id LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "page_parts" WHERE ("page_parts"."name" = 'extended') AND ("page_parts".page_id = 1) ORDER BY id LIMIT 1[0m
+  [4;35;1mPagePart Load (0.000239)[0m   [0mSELECT * FROM "page_parts" WHERE ("page_parts"."name" = 'sidebar') AND ("page_parts".page_id = 1) ORDER BY id LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "page_parts" WHERE ("page_parts"."name" = 'sidebar') AND ("page_parts".page_id = 1) ORDER BY id LIMIT 1[0m
+  [4;35;1mSnippet Load (0.000271)[0m   [0mSELECT * FROM "snippets" WHERE ("snippets"."name" = 'footer') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "config" WHERE ("config"."key" = 'dev.host') LIMIT 1[0m
+Cached page: /Users/burke/src/facultyclub/cache/_site-root (0.00063)
+Completed in 0.12660 (7 reqs/sec) | DB: 0.00419 (3%) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.000448)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000560)[0m   [0;1mSELECT DISTINCT class_name FROM pages WHERE class_name <> '' AND class_name IS NOT NULL[0m
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2009-03-14 13:49:47) [GET]
+  Parameters: {"url"=>["rss"], "action"=>"show_page", "controller"=>"site"}
+  [4;35;1mRadiant::Config Load (0.000810)[0m   [0mSELECT * FROM "config" WHERE ("config"."key" = 'dev.host') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "config" WHERE ("config"."key" = 'dev.host') LIMIT 1[0m
+  [4;35;1mPage Load (0.000403)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."parent_id" IS NULL) LIMIT 1[0m
+  [4;36;1mPage Load (0.000712)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."slug" = 'rss') AND ("pages".parent_id = 1) ORDER BY virtual DESC, title ASC LIMIT 1[0m
+  [4;35;1mPage Load (0.002050)[0m   [0mSELECT * FROM "pages" WHERE ("pages".parent_id = 1) ORDER BY virtual DESC, title ASC[0m
+  [4;36;1mPage Load (0.000360)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+  [4;35;1mPage Load (0.000686)[0m   [0mSELECT * FROM "pages" WHERE ("pages".parent_id = 1 AND (status_id = 100 and (class_name = 'FileNotFoundPage'))) ORDER BY virtual DESC, title ASC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering site/not_found (404)
+  [4;36;1mRadiant::Config Load (0.000256)[0m   [0;1mSELECT * FROM "config" WHERE ("config"."key" = 'admin.title') LIMIT 1[0m
+  [4;35;1mRadiant::Config Load (0.000183)[0m   [0mSELECT * FROM "config" WHERE ("config"."key" = 'admin.subtitle') LIMIT 1[0m
+Completed in 0.11580 (8 reqs/sec) | Rendering: 0.00305 (2%) | DB: 0.00546 (4%) | 404 Not Found [http://localhost/rss/]
+  [4;36;1mSQL (0.000512)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000822)[0m   [0mSELECT DISTINCT class_name FROM pages WHERE class_name <> '' AND class_name IS NOT NULL[0m
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2009-03-14 14:19:50) [GET]
+  Parameters: {"url"=>["rss"], "action"=>"show_page", "controller"=>"site"}
+  [4;36;1mRadiant::Config Load (0.000714)[0m   [0;1mSELECT * FROM "config" WHERE ("config"."key" = 'dev.host') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "config" WHERE ("config"."key" = 'dev.host') LIMIT 1[0m
+  [4;36;1mPage Load (0.000390)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."parent_id" IS NULL) LIMIT 1[0m
+  [4;35;1mPage Load (0.000812)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."slug" = 'rss') AND ("pages".parent_id = 1) ORDER BY virtual DESC, title ASC LIMIT 1[0m
+  [4;36;1mPage Load (0.001571)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages".parent_id = 1) ORDER BY virtual DESC, title ASC[0m
+  [4;35;1mPage Load (0.000341)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+  [4;36;1mPage Load (0.000698)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages".parent_id = 1 AND (status_id = 100 and (class_name = 'FileNotFoundPage'))) ORDER BY virtual DESC, title ASC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering site/not_found (404)
+  [4;35;1mRadiant::Config Load (0.000252)[0m   [0mSELECT * FROM "config" WHERE ("config"."key" = 'admin.title') LIMIT 1[0m
+  [4;36;1mRadiant::Config Load (0.000185)[0m   [0;1mSELECT * FROM "config" WHERE ("config"."key" = 'admin.subtitle') LIMIT 1[0m
+Completed in 0.03941 (25 reqs/sec) | Rendering: 0.00302 (7%) | DB: 0.00496 (12%) | 404 Not Found [http://localhost/rss/]
+  [4;35;1mSQL (0.000534)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000555)[0m   [0;1mSELECT DISTINCT class_name FROM pages WHERE class_name <> '' AND class_name IS NOT NULL[0m
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2009-03-14 14:28:20) [GET]
+  Parameters: {"url"=>"/", "action"=>"show_page", "controller"=>"site"}
+  [4;35;1mRadiant::Config Load (0.000711)[0m   [0mSELECT * FROM "config" WHERE ("config"."key" = 'dev.host') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "config" WHERE ("config"."key" = 'dev.host') LIMIT 1[0m
+  [4;35;1mPage Load (0.000393)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."parent_id" IS NULL) LIMIT 1[0m
+  [4;36;1mLayout Load (0.000296)[0m   [0;1mSELECT * FROM "layouts" WHERE ("layouts"."id" = 1) ORDER BY name[0m
+  [4;35;1mSnippet Load (0.000330)[0m   [0mSELECT * FROM "snippets" WHERE ("snippets"."name" = 'header') LIMIT 1[0m
+  [4;36;1mSnippet Load (0.000390)[0m   [0;1mSELECT * FROM "snippets" WHERE ("snippets"."name" = 'navigation') LIMIT 1[0m
+  [4;35;1mPagePart Load (0.000949)[0m   [0mSELECT * FROM "page_parts" WHERE ("page_parts".page_id = 1) ORDER BY id[0m
+  [4;36;1mPagePart Load (0.000238)[0m   [0;1mSELECT * FROM "page_parts" WHERE ("page_parts"."name" = 'body') AND ("page_parts".page_id = 1) ORDER BY id LIMIT 1[0m
+  [4;35;1mPagePart Load (0.000344)[0m   [0mSELECT * FROM "page_parts" WHERE ("page_parts"."name" = 'extended') AND ("page_parts".page_id = 1) ORDER BY id LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "page_parts" WHERE ("page_parts"."name" = 'extended') AND ("page_parts".page_id = 1) ORDER BY id LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "page_parts" WHERE ("page_parts"."name" = 'extended') AND ("page_parts".page_id = 1) ORDER BY id LIMIT 1[0m
+  [4;36;1mPagePart Load (0.000236)[0m   [0;1mSELECT * FROM "page_parts" WHERE ("page_parts"."name" = 'sidebar') AND ("page_parts".page_id = 1) ORDER BY id LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "page_parts" WHERE ("page_parts"."name" = 'sidebar') AND ("page_parts".page_id = 1) ORDER BY id LIMIT 1[0m
+  [4;36;1mSnippet Load (0.000278)[0m   [0;1mSELECT * FROM "snippets" WHERE ("snippets"."name" = 'footer') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "config" WHERE ("config"."key" = 'dev.host') LIMIT 1[0m
+Cached page: /Users/burke/src/facultyclub/cache/_site-root (0.00063)
+Completed in 0.12577 (7 reqs/sec) | DB: 0.00416 (3%) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.000448)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000560)[0m   [0mSELECT DISTINCT class_name FROM pages WHERE class_name <> '' AND class_name IS NOT NULL[0m
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2009-03-14 14:28:25) [GET]
+  Parameters: {"url"=>["about"], "action"=>"show_page", "controller"=>"site"}
+  [4;36;1mRadiant::Config Load (0.000792)[0m   [0;1mSELECT * FROM "config" WHERE ("config"."key" = 'dev.host') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "config" WHERE ("config"."key" = 'dev.host') LIMIT 1[0m
+  [4;36;1mPage Load (0.000448)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."parent_id" IS NULL) LIMIT 1[0m
+  [4;35;1mPage Load (0.000894)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."slug" = 'about') AND ("pages".parent_id = 1) ORDER BY virtual DESC, title ASC LIMIT 1[0m
+  [4;36;1mPage Load (0.000352)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+  [4;35;1mLayout Load (0.000301)[0m   [0mSELECT * FROM "layouts" WHERE ("layouts"."id" = 1) ORDER BY name[0m
+  [4;36;1mSnippet Load (0.000362)[0m   [0;1mSELECT * FROM "snippets" WHERE ("snippets"."name" = 'header') LIMIT 1[0m
+  [4;35;1mSnippet Load (0.000445)[0m   [0mSELECT * FROM "snippets" WHERE ("snippets"."name" = 'navigation') LIMIT 1[0m
+  [4;36;1mPagePart Load (0.000950)[0m   [0;1mSELECT * FROM "page_parts" WHERE ("page_parts".page_id = 2) ORDER BY id[0m
+  [4;35;1mPagePart Load (0.000283)[0m   [0mSELECT * FROM "page_parts" WHERE ("page_parts"."name" = 'body') AND ("page_parts".page_id = 2) ORDER BY id LIMIT 1[0m
+  [4;36;1mPagePart Load (0.000342)[0m   [0;1mSELECT * FROM "page_parts" WHERE ("page_parts"."name" = 'extended') AND ("page_parts".page_id = 2) ORDER BY id LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "page_parts" WHERE ("page_parts"."name" = 'extended') AND ("page_parts".page_id = 2) ORDER BY id LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "page_parts" WHERE ("page_parts"."name" = 'extended') AND ("page_parts".page_id = 2) ORDER BY id LIMIT 1[0m
+  [4;35;1mPagePart Load (0.000242)[0m   [0mSELECT * FROM "page_parts" WHERE ("page_parts"."name" = 'sidebar') AND ("page_parts".page_id = 2) ORDER BY id LIMIT 1[0m
+  [4;36;1mPagePart Load (0.000800)[0m   [0;1mSELECT * FROM "page_parts" WHERE ("page_parts".page_id = 1) ORDER BY id[0m
+  [4;35;1mPagePart Load (0.000141)[0m   [0mSELECT * FROM "page_parts" WHERE ("page_parts"."name" = 'sidebar') AND ("page_parts".page_id = 1) ORDER BY id LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "page_parts" WHERE ("page_parts"."name" = 'sidebar') AND ("page_parts".page_id = 1) ORDER BY id LIMIT 1[0m
+  [4;35;1mSnippet Load (0.000268)[0m   [0mSELECT * FROM "snippets" WHERE ("snippets"."name" = 'footer') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "config" WHERE ("config"."key" = 'dev.host') LIMIT 1[0m
+Cached page: /Users/burke/src/facultyclub/cache/about (0.05676)
+Completed in 0.18615 (5 reqs/sec) | DB: 0.00662 (3%) | 200 OK [http://localhost/about]
+  [4;35;1mSQL (0.001041)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000680)[0m   [0;1mSELECT DISTINCT class_name FROM pages WHERE class_name <> '' AND class_name IS NOT NULL[0m
