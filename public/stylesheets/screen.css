@@ -1,10 +1,12 @@
 html {
-    background: #131313;
+    background: url(/images/bg.png) top left repeat-x #131313;
+    height: 100%;
 }
 
 body {
-    background: url(/images/bg.png) top left repeat-x;
     margin: 0 auto;
+    background: url(/images/body-bg.gif) top center repeat-y;
+    height: 100%;
 }
 
 #content {
@@ -29,6 +31,11 @@ body {
     margin-bottom: 27px;
     font-family: helvetica, arial, sans;
     font-variant: small-caps;
+}
+
+#nav li a {
+    text-decoration: none;
+    color: #222;
 }
 
 /* END NAV MENU ******************************/
