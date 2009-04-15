@@ -33245,3 +33245,898 @@ Completed in 0.05843 (17 reqs/sec) | DB: 0.00405 (6%) | 200 OK [http://localhost
  WHERE type = 'table' AND NOT name = 'sqlite_sequence'
 [0m
   [4;35;1mSQL (0.000569)[0m   [0mSELECT DISTINCT class_name FROM pages WHERE class_name <> '' AND class_name IS NOT NULL[0m
+
+
+Processing Admin::WelcomeController#index (for 127.0.0.1 at 2009-04-15 13:24:05) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlOTZkNDE0NzhjMTYyMjJhYTVl
+Y2JkZDE5ZmJhOTRjNGMiDHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiJFlvdXIgcGFn
+ZSBoYXMgYmVlbiBzYXZlZCBiZWxvdy4GOgpAdXNlZHsGOwhU--464c2c88d19aea3d3e9501da18dcf88c7a7c275d
+  Parameters: {"action"=>"index", "controller"=>"admin/welcome"}
+  [4;36;1mUser Load (0.000345)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) ORDER BY name[0m
+Redirected to http://localhost:3000/admin/pages
+Completed in 0.00522 (191 reqs/sec) | DB: 0.00034 (6%) | 302 Found [http://localhost/admin]
+  [4;35;1mSQL (0.000604)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000687)[0m   [0;1mSELECT DISTINCT class_name FROM pages WHERE class_name <> '' AND class_name IS NOT NULL[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-15 13:24:06) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlOTZkNDE0NzhjMTYyMjJhYTVl
+Y2JkZDE5ZmJhOTRjNGMiDHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--5e5ac8cfc0b672aa5ecb1733bc65cb7a6995530c
+  Parameters: {"action"=>"index", "controller"=>"admin/pages"}
+  [4;35;1mUser Load (0.000323)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) ORDER BY name[0m
+  [4;36;1mPage Load (0.001364)[0m   [0;1mSELECT * FROM "pages" [0m
+  [4;35;1mPage Load (0.000401)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."parent_id" IS NULL) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/pages/index
+  [4;36;1mSQL (0.000241)[0m   [0;1mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 1) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 1) [0m
+  [4;36;1mPage Load (0.001578)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages".parent_id = 1) ORDER BY virtual DESC, title ASC[0m
+  [4;35;1mSQL (0.000196)[0m   [0mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 2) [0m
+  [4;36;1mPage Load (0.000398)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+Rendered admin/pages/_node (0.00414)
+  [4;35;1mSQL (0.000188)[0m   [0mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 3) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+Rendered admin/pages/_node (0.00331)
+  [4;35;1mSQL (0.000219)[0m   [0mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 7) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+Rendered admin/pages/_node (0.00348)
+  [4;35;1mSQL (0.000193)[0m   [0mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 5) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+Rendered admin/pages/_node (0.07795)
+  [4;35;1mSQL (0.000268)[0m   [0mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 8) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 8) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+  [4;36;1mPage Load (0.001056)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages".parent_id = 8) ORDER BY virtual DESC, title ASC[0m
+  [4;35;1mSQL (0.000171)[0m   [0mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 9) [0m
+  [4;36;1mPage Load (0.000394)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 8) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+Rendered admin/pages/_node (0.00470)
+  [4;36;1mSQL (0.000197)[0m   [0;1mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 10) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 8) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+Rendered admin/pages/_node (0.00415)
+Rendered admin/pages/_node (0.01523)
+  [4;35;1mSQL (0.000229)[0m   [0mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 6) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+Rendered admin/pages/_node (0.00370)
+Rendered admin/pages/_node (0.12430)
+  [4;35;1mRadiant::Config Load (0.000254)[0m   [0mSELECT * FROM "config" WHERE ("config"."key" = 'admin.title') LIMIT 1[0m
+  [4;36;1mRadiant::Config Load (0.000179)[0m   [0;1mSELECT * FROM "config" WHERE ("config"."key" = 'admin.subtitle') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "config" WHERE ("config"."key" = 'admin.title') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "config" WHERE ("config"."key" = 'admin.subtitle') LIMIT 1[0m
+Completed in 0.14198 (7 reqs/sec) | Rendering: 0.12695 (89%) | DB: 0.00785 (5%) | 200 OK [http://localhost/admin/pages]
+  [4;35;1mSQL (0.000439)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000517)[0m   [0;1mSELECT DISTINCT class_name FROM pages WHERE class_name <> '' AND class_name IS NOT NULL[0m
+
+
+Processing Admin::PagesController#remove (for 127.0.0.1 at 2009-04-15 13:24:27) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlOTZkNDE0NzhjMTYyMjJhYTVl
+Y2JkZDE5ZmJhOTRjNGMiDHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--5e5ac8cfc0b672aa5ecb1733bc65cb7a6995530c
+  Parameters: {"action"=>"remove", "id"=>"6", "controller"=>"admin/pages"}
+  [4;35;1mUser Load (0.000413)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) ORDER BY name[0m
+  [4;36;1mPage Load (0.000369)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+Rendering template within layouts/application
+Rendering admin/pages/remove
+  [4;35;1mSQL (0.000231)[0m   [0mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 6) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 6) [0m
+Rendered admin/pages/_node (0.00636)
+  [4;35;1mRadiant::Config Load (0.000283)[0m   [0mSELECT * FROM "config" WHERE ("config"."key" = 'admin.title') LIMIT 1[0m
+  [4;36;1mRadiant::Config Load (0.000174)[0m   [0;1mSELECT * FROM "config" WHERE ("config"."key" = 'admin.subtitle') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "config" WHERE ("config"."key" = 'admin.title') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "config" WHERE ("config"."key" = 'admin.subtitle') LIMIT 1[0m
+Completed in 0.02250 (44 reqs/sec) | Rendering: 0.01427 (63%) | DB: 0.00147 (6%) | 200 OK [http://localhost/admin/pages/6/remove]
+  [4;35;1mSQL (0.000451)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000827)[0m   [0;1mSELECT DISTINCT class_name FROM pages WHERE class_name <> '' AND class_name IS NOT NULL[0m
+
+
+Processing Admin::PagesController#destroy (for 127.0.0.1 at 2009-04-15 13:24:29) [DELETE]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlOTZkNDE0NzhjMTYyMjJhYTVl
+Y2JkZDE5ZmJhOTRjNGMiDHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--5e5ac8cfc0b672aa5ecb1733bc65cb7a6995530c
+  Parameters: {"action"=>"destroy", "_method"=>"delete", "authenticity_token"=>"c8bca4d1f4731d450909bc163863a32ccad106ac", "id"=>"6", "controller"=>"admin/pages"}
+  [4;35;1mUser Load (0.000314)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) ORDER BY name[0m
+  [4;36;1mPage Load (0.000344)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;35;1mPage Load (0.000633)[0m   [0mSELECT * FROM "pages" WHERE ("pages".parent_id = 6) ORDER BY virtual DESC, title ASC[0m
+  [4;36;1mPagePart Load (0.001036)[0m   [0;1mSELECT * FROM "page_parts" WHERE ("page_parts".page_id = 6) ORDER BY id[0m
+  [4;35;1mPagePart Destroy (0.001009)[0m   [0m DELETE FROM "page_parts"
+ WHERE "id" = 15
+[0m
+  [4;36;1mPagePart Destroy (0.000144)[0m   [0;1m DELETE FROM "page_parts"
+ WHERE "id" = 16
+[0m
+  [4;35;1mPage Destroy (0.000244)[0m   [0m DELETE FROM "pages"
+ WHERE "id" = 6
+[0m
+Redirected to http://localhost:3000/admin/pages
+Completed in 0.02306 (43 reqs/sec) | DB: 0.00372 (16%) | 302 Found [http://localhost/admin/pages/6]
+  [4;36;1mSQL (0.000480)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000557)[0m   [0mSELECT DISTINCT class_name FROM pages WHERE class_name <> '' AND class_name IS NOT NULL[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-15 13:24:30) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlOTZkNDE0NzhjMTYyMjJhYTVl
+Y2JkZDE5ZmJhOTRjNGMiDHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiG1BhZ2UgaGFz
+IGJlZW4gZGVsZXRlZC4GOgpAdXNlZHsGOwhG--6c367a4a33a775acf148f1afd5cbfd71dfcb95ad
+  Parameters: {"action"=>"index", "controller"=>"admin/pages"}
+  [4;36;1mUser Load (0.000409)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) ORDER BY name[0m
+  [4;35;1mPage Load (0.001548)[0m   [0mSELECT * FROM "pages" [0m
+  [4;36;1mPage Load (0.000432)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."parent_id" IS NULL) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/pages/index
+  [4;35;1mSQL (0.000230)[0m   [0mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 1) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 1) [0m
+  [4;35;1mPage Load (0.001497)[0m   [0mSELECT * FROM "pages" WHERE ("pages".parent_id = 1) ORDER BY virtual DESC, title ASC[0m
+  [4;36;1mSQL (0.000172)[0m   [0;1mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 2) [0m
+  [4;35;1mPage Load (0.000361)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+Rendered admin/pages/_node (0.00403)
+  [4;36;1mSQL (0.000182)[0m   [0;1mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 3) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+Rendered admin/pages/_node (0.00345)
+  [4;36;1mSQL (0.000220)[0m   [0;1mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 7) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+Rendered admin/pages/_node (0.00367)
+  [4;36;1mSQL (0.000201)[0m   [0;1mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 5) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+Rendered admin/pages/_node (0.00342)
+  [4;36;1mSQL (0.000185)[0m   [0;1mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 8) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 8) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+  [4;35;1mPage Load (0.000981)[0m   [0mSELECT * FROM "pages" WHERE ("pages".parent_id = 8) ORDER BY virtual DESC, title ASC[0m
+  [4;36;1mSQL (0.000158)[0m   [0;1mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 9) [0m
+  [4;35;1mPage Load (0.000340)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 8) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+Rendered admin/pages/_node (0.00424)
+  [4;35;1mSQL (0.000182)[0m   [0mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 10) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 8) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+Rendered admin/pages/_node (0.00375)
+Rendered admin/pages/_node (0.01350)
+Rendered admin/pages/_node (0.04433)
+  [4;36;1mRadiant::Config Load (0.000305)[0m   [0;1mSELECT * FROM "config" WHERE ("config"."key" = 'admin.title') LIMIT 1[0m
+  [4;35;1mRadiant::Config Load (0.000181)[0m   [0mSELECT * FROM "config" WHERE ("config"."key" = 'admin.subtitle') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "config" WHERE ("config"."key" = 'admin.title') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "config" WHERE ("config"."key" = 'admin.subtitle') LIMIT 1[0m
+Completed in 0.06269 (15 reqs/sec) | Rendering: 0.04759 (75%) | DB: 0.00758 (12%) | 200 OK [http://localhost/admin/pages]
+  [4;36;1mSQL (0.000454)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000535)[0m   [0mSELECT DISTINCT class_name FROM pages WHERE class_name <> '' AND class_name IS NOT NULL[0m
+
+
+Processing Admin::PagesController#remove (for 127.0.0.1 at 2009-04-15 13:24:36) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlOTZkNDE0NzhjMTYyMjJhYTVl
+Y2JkZDE5ZmJhOTRjNGMiDHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiG1BhZ2UgaGFz
+IGJlZW4gZGVsZXRlZC4GOgpAdXNlZHsGOwhU--1da2b79f51d1877bfe31bec9cb3258beee606079
+  Parameters: {"action"=>"remove", "id"=>"3", "controller"=>"admin/pages"}
+  [4;36;1mUser Load (0.000375)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) ORDER BY name[0m
+  [4;35;1mPage Load (0.000585)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering admin/pages/remove
+  [4;36;1mSQL (0.000235)[0m   [0;1mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 3) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 3) [0m
+Rendered admin/pages/_node (0.00750)
+  [4;36;1mRadiant::Config Load (0.000280)[0m   [0;1mSELECT * FROM "config" WHERE ("config"."key" = 'admin.title') LIMIT 1[0m
+  [4;35;1mRadiant::Config Load (0.000173)[0m   [0mSELECT * FROM "config" WHERE ("config"."key" = 'admin.subtitle') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "config" WHERE ("config"."key" = 'admin.title') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "config" WHERE ("config"."key" = 'admin.subtitle') LIMIT 1[0m
+Completed in 0.02425 (41 reqs/sec) | Rendering: 0.01578 (65%) | DB: 0.00165 (6%) | 200 OK [http://localhost/admin/pages/3/remove]
+  [4;36;1mSQL (0.000457)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000653)[0m   [0mSELECT DISTINCT class_name FROM pages WHERE class_name <> '' AND class_name IS NOT NULL[0m
+
+
+Processing Admin::PagesController#destroy (for 127.0.0.1 at 2009-04-15 13:24:38) [DELETE]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlOTZkNDE0NzhjMTYyMjJhYTVl
+Y2JkZDE5ZmJhOTRjNGMiDHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--5e5ac8cfc0b672aa5ecb1733bc65cb7a6995530c
+  Parameters: {"action"=>"destroy", "_method"=>"delete", "authenticity_token"=>"c8bca4d1f4731d450909bc163863a32ccad106ac", "id"=>"3", "controller"=>"admin/pages"}
+  [4;36;1mUser Load (0.000319)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) ORDER BY name[0m
+  [4;35;1mPage Load (0.000345)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 3) [0m
+  [4;36;1mPage Load (0.000715)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages".parent_id = 3) ORDER BY virtual DESC, title ASC[0m
+  [4;35;1mPagePart Load (0.000939)[0m   [0mSELECT * FROM "page_parts" WHERE ("page_parts".page_id = 3) ORDER BY id[0m
+  [4;36;1mPagePart Destroy (0.000566)[0m   [0;1m DELETE FROM "page_parts"
+ WHERE "id" = 9
+[0m
+  [4;35;1mPagePart Destroy (0.000105)[0m   [0m DELETE FROM "page_parts"
+ WHERE "id" = 10
+[0m
+  [4;36;1mPage Destroy (0.000232)[0m   [0;1m DELETE FROM "pages"
+ WHERE "id" = 3
+[0m
+Redirected to http://localhost:3000/admin/pages
+Completed in 0.11101 (9 reqs/sec) | DB: 0.00322 (2%) | 302 Found [http://localhost/admin/pages/3]
+  [4;35;1mSQL (0.000511)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000535)[0m   [0;1mSELECT DISTINCT class_name FROM pages WHERE class_name <> '' AND class_name IS NOT NULL[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-15 13:24:38) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlOTZkNDE0NzhjMTYyMjJhYTVl
+Y2JkZDE5ZmJhOTRjNGMiDHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiG1BhZ2UgaGFz
+IGJlZW4gZGVsZXRlZC4GOgpAdXNlZHsGOwhG--6c367a4a33a775acf148f1afd5cbfd71dfcb95ad
+  Parameters: {"action"=>"index", "controller"=>"admin/pages"}
+  [4;35;1mUser Load (0.000321)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) ORDER BY name[0m
+  [4;36;1mPage Load (0.001150)[0m   [0;1mSELECT * FROM "pages" [0m
+  [4;35;1mPage Load (0.000464)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."parent_id" IS NULL) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/pages/index
+  [4;36;1mSQL (0.000307)[0m   [0;1mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 1) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 1) [0m
+  [4;36;1mPage Load (0.001360)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages".parent_id = 1) ORDER BY virtual DESC, title ASC[0m
+  [4;35;1mSQL (0.000171)[0m   [0mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 2) [0m
+  [4;36;1mPage Load (0.000347)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+Rendered admin/pages/_node (0.00394)
+  [4;35;1mSQL (0.000183)[0m   [0mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 7) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+Rendered admin/pages/_node (0.00351)
+  [4;35;1mSQL (0.000305)[0m   [0mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 5) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+Rendered admin/pages/_node (0.00364)
+  [4;35;1mSQL (0.000200)[0m   [0mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 8) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 8) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+  [4;36;1mPage Load (0.000999)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages".parent_id = 8) ORDER BY virtual DESC, title ASC[0m
+  [4;35;1mSQL (0.000161)[0m   [0mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 9) [0m
+  [4;36;1mPage Load (0.000347)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 8) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+Rendered admin/pages/_node (0.00438)
+  [4;36;1mSQL (0.000187)[0m   [0;1mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 10) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 8) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+Rendered admin/pages/_node (0.00391)
+Rendered admin/pages/_node (0.01391)
+Rendered admin/pages/_node (0.04054)
+  [4;35;1mRadiant::Config Load (0.000266)[0m   [0mSELECT * FROM "config" WHERE ("config"."key" = 'admin.title') LIMIT 1[0m
+  [4;36;1mRadiant::Config Load (0.000176)[0m   [0;1mSELECT * FROM "config" WHERE ("config"."key" = 'admin.subtitle') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "config" WHERE ("config"."key" = 'admin.title') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "config" WHERE ("config"."key" = 'admin.subtitle') LIMIT 1[0m
+Completed in 0.05809 (17 reqs/sec) | Rendering: 0.04385 (75%) | DB: 0.00694 (11%) | 200 OK [http://localhost/admin/pages]
+  [4;35;1mSQL (0.000458)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000581)[0m   [0;1mSELECT DISTINCT class_name FROM pages WHERE class_name <> '' AND class_name IS NOT NULL[0m
+
+
+Processing Admin::PagesController#edit (for 127.0.0.1 at 2009-04-15 13:25:12) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlOTZkNDE0NzhjMTYyMjJhYTVl
+Y2JkZDE5ZmJhOTRjNGMiDHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiG1BhZ2UgaGFz
+IGJlZW4gZGVsZXRlZC4GOgpAdXNlZHsGOwhU--1da2b79f51d1877bfe31bec9cb3258beee606079
+  Parameters: {"action"=>"edit", "id"=>"8", "controller"=>"admin/pages"}
+  [4;35;1mUser Load (0.000314)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) ORDER BY name[0m
+  [4;36;1mPage Load (0.000342)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 8) [0m
+Rendering template within layouts/application
+Rendering admin/pages/edit
+Rendered admin/pages/_meta_row (0.00023)
+Rendered admin/pages/_meta_row (0.00021)
+Rendered admin/pages/_meta_row (0.00021)
+Rendered admin/pages/_meta_row (0.00020)
+  [4;35;1mSQL (0.000211)[0m   [0mSELECT count(*) AS count_all FROM "page_parts" WHERE ("page_parts".page_id = 8) [0m
+  [4;36;1mPagePart Load (0.000770)[0m   [0;1mSELECT * FROM "page_parts" WHERE ("page_parts".page_id = 8) ORDER BY id[0m
+Rendered admin/page_parts/_page_part (0.02346)
+Rendered admin/page_parts/_page_part (0.02644)
+  [4;35;1mLayout Load (0.000889)[0m   [0mSELECT * FROM "layouts" ORDER BY name[0m
+  [4;36;1mRadiant::Config Load (0.000222)[0m   [0;1mSELECT * FROM "config" WHERE ("config"."key" = 'page.edit.published_date?') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) ORDER BY name[0m
+  [4;36;1mRadiant::Config Load (0.000156)[0m   [0;1mSELECT * FROM "config" WHERE ("config"."key" = 'local.timezone') LIMIT 1[0m
+Rendered admin/pages/_fields (0.18998)
+  [4;35;1mRadiant::Config Load (0.000263)[0m   [0mSELECT * FROM "config" WHERE ("config"."key" = 'defaults.page.filter') LIMIT 1[0m
+Rendered admin/references/_tag_reference (0.00004)
+Rendered admin/references/_tag_reference (0.00004)
+Rendered admin/references/_tag_reference (0.00007)
+Rendered admin/references/_tag_reference (0.00006)
+Rendered admin/references/_tag_reference (0.00004)
+Rendered admin/references/_tag_reference (0.00007)
+Rendered admin/references/_tag_reference (0.00007)
+Rendered admin/references/_tag_reference (0.00008)
+Rendered admin/references/_tag_reference (0.00007)
+Rendered admin/references/_tag_reference (0.00007)
+Rendered admin/references/_tag_reference (0.00007)
+Rendered admin/references/_tag_reference (0.00007)
+Rendered admin/references/_tag_reference (0.00006)
+Rendered admin/references/_tag_reference (0.00006)
+Rendered admin/references/_tag_reference (0.00006)
+Rendered admin/references/_tag_reference (0.00007)
+Rendered admin/references/_tag_reference (0.00006)
+Rendered admin/references/_tag_reference (0.00007)
+Rendered admin/references/_tag_reference (0.00006)
+Rendered admin/references/_tag_reference (0.00006)
+Rendered admin/references/_tag_reference (0.00006)
+Rendered admin/references/_tag_reference (0.00007)
+Rendered admin/references/_tag_reference (0.00009)
+Rendered admin/references/_tag_reference (0.00006)
+Rendered admin/references/_tag_reference (0.00006)
+Rendered admin/references/_tag_reference (0.00006)
+Rendered admin/references/_tag_reference (0.00007)
+Rendered admin/references/_tag_reference (0.00008)
+Rendered admin/references/_tag_reference (0.00006)
+Rendered admin/references/_tag_reference (0.00007)
+Rendered admin/references/_tag_reference (0.00006)
+Rendered admin/references/_tag_reference (0.00006)
+Rendered admin/references/_tag_reference (0.00009)
+Rendered admin/references/_tag_reference (0.00006)
+Rendered admin/references/_tag_reference (0.00006)
+Rendered admin/references/_tag_reference (0.00007)
+Rendered admin/references/_tag_reference (0.00006)
+Rendered admin/references/_tag_reference (0.00004)
+Rendered admin/references/_tag_reference (0.00006)
+Rendered admin/references/_tag_reference (0.00007)
+Rendered admin/references/_tag_reference (0.00006)
+Rendered admin/references/_tag_reference (0.00007)
+Rendered admin/references/_tag_reference (0.00004)
+Rendered admin/references/_tag_reference (0.00006)
+Rendered admin/references/_tag_reference (0.00007)
+Rendered admin/references/_tag_reference (0.00007)
+Rendered admin/references/_tag_reference (0.00006)
+Rendered admin/references/_tag_reference (0.00006)
+Rendered admin/references/_tag_reference (0.00006)
+Rendered admin/references/_tag_reference (0.00006)
+Rendered admin/references/_tag_reference (0.00004)
+Rendered admin/references/_tag_reference (0.00009)
+Rendered admin/pages/_popups (0.03860)
+Rendered admin/pages/_edit_styles (0.00059)
+  [4;36;1mRadiant::Config Load (0.000289)[0m   [0;1mSELECT * FROM "config" WHERE ("config"."key" = 'admin.title') LIMIT 1[0m
+  [4;35;1mRadiant::Config Load (0.000176)[0m   [0mSELECT * FROM "config" WHERE ("config"."key" = 'admin.subtitle') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "config" WHERE ("config"."key" = 'admin.title') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "config" WHERE ("config"."key" = 'admin.subtitle') LIMIT 1[0m
+Completed in 0.24680 (4 reqs/sec) | Rendering: 0.23751 (96%) | DB: 0.00363 (1%) | 200 OK [http://localhost/admin/pages/8/edit]
+  [4;36;1mSQL (0.000454)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000561)[0m   [0mSELECT DISTINCT class_name FROM pages WHERE class_name <> '' AND class_name IS NOT NULL[0m
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2009-04-15 13:26:39) [GET]
+  Parameters: {"url"=>"/", "action"=>"show_page", "controller"=>"site"}
+  [4;36;1mRadiant::Config Load (0.000704)[0m   [0;1mSELECT * FROM "config" WHERE ("config"."key" = 'dev.host') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "config" WHERE ("config"."key" = 'dev.host') LIMIT 1[0m
+  [4;36;1mPage Load (0.000385)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."parent_id" IS NULL) LIMIT 1[0m
+  [4;35;1mLayout Load (0.000309)[0m   [0mSELECT * FROM "layouts" WHERE ("layouts"."id" = 1) ORDER BY name[0m
+  [4;36;1mPagePart Load (0.000898)[0m   [0;1mSELECT * FROM "page_parts" WHERE ("page_parts".page_id = 1) ORDER BY id[0m
+  [4;35;1mPagePart Load (0.000223)[0m   [0mSELECT * FROM "page_parts" WHERE ("page_parts"."name" = 'body') AND ("page_parts".page_id = 1) ORDER BY id LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "config" WHERE ("config"."key" = 'dev.host') LIMIT 1[0m
+Cached page: /Users/burke/src/facultyclub/cache/_site-root (0.00083)
+Completed in 0.05601 (17 reqs/sec) | DB: 0.00252 (4%) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.000451)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000625)[0m   [0;1mSELECT DISTINCT class_name FROM pages WHERE class_name <> '' AND class_name IS NOT NULL[0m
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2009-04-15 13:27:01) [GET]
+  Parameters: {"url"=>["about"], "action"=>"show_page", "controller"=>"site"}
+  [4;35;1mRadiant::Config Load (0.000706)[0m   [0mSELECT * FROM "config" WHERE ("config"."key" = 'dev.host') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "config" WHERE ("config"."key" = 'dev.host') LIMIT 1[0m
+  [4;35;1mPage Load (0.000395)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."parent_id" IS NULL) LIMIT 1[0m
+  [4;36;1mPage Load (0.001213)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."slug" = 'about') AND ("pages".parent_id = 1) ORDER BY virtual DESC, title ASC LIMIT 1[0m
+  [4;35;1mPage Load (0.000333)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+  [4;36;1mLayout Load (0.000339)[0m   [0;1mSELECT * FROM "layouts" WHERE ("layouts"."id" = 1) ORDER BY name[0m
+  [4;35;1mPagePart Load (0.001013)[0m   [0mSELECT * FROM "page_parts" WHERE ("page_parts".page_id = 2) ORDER BY id[0m
+  [4;36;1mPagePart Load (0.000298)[0m   [0;1mSELECT * FROM "page_parts" WHERE ("page_parts"."name" = 'body') AND ("page_parts".page_id = 2) ORDER BY id LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "config" WHERE ("config"."key" = 'dev.host') LIMIT 1[0m
+Cached page: /Users/burke/src/facultyclub/cache/about (0.00090)
+Completed in 0.16983 (5 reqs/sec) | DB: 0.00430 (2%) | 200 OK [http://localhost/about]
+  [4;36;1mSQL (0.000453)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000581)[0m   [0mSELECT DISTINCT class_name FROM pages WHERE class_name <> '' AND class_name IS NOT NULL[0m
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2009-04-15 13:27:47) [GET]
+  Parameters: {"url"=>["membership"], "action"=>"show_page", "controller"=>"site"}
+  [4;36;1mRadiant::Config Load (0.000707)[0m   [0;1mSELECT * FROM "config" WHERE ("config"."key" = 'dev.host') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "config" WHERE ("config"."key" = 'dev.host') LIMIT 1[0m
+  [4;36;1mPage Load (0.000434)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."parent_id" IS NULL) LIMIT 1[0m
+  [4;35;1mPage Load (0.001537)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."slug" = 'membership') AND ("pages".parent_id = 1) ORDER BY virtual DESC, title ASC LIMIT 1[0m
+  [4;36;1mPage Load (0.000351)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+  [4;35;1mLayout Load (0.000335)[0m   [0mSELECT * FROM "layouts" WHERE ("layouts"."id" = 1) ORDER BY name[0m
+  [4;36;1mPagePart Load (0.000907)[0m   [0;1mSELECT * FROM "page_parts" WHERE ("page_parts".page_id = 5) ORDER BY id[0m
+  [4;35;1mPagePart Load (0.000237)[0m   [0mSELECT * FROM "page_parts" WHERE ("page_parts"."name" = 'body') AND ("page_parts".page_id = 5) ORDER BY id LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "config" WHERE ("config"."key" = 'dev.host') LIMIT 1[0m
+Cached page: /Users/burke/src/facultyclub/cache/membership (0.00078)
+Completed in 0.06811 (14 reqs/sec) | DB: 0.00451 (6%) | 200 OK [http://localhost/membership]
+  [4;35;1mSQL (0.000471)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000743)[0m   [0;1mSELECT DISTINCT class_name FROM pages WHERE class_name <> '' AND class_name IS NOT NULL[0m
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2009-04-15 13:28:44) [GET]
+  Parameters: {"url"=>["contact"], "action"=>"show_page", "controller"=>"site"}
+  [4;35;1mRadiant::Config Load (0.001657)[0m   [0mSELECT * FROM "config" WHERE ("config"."key" = 'dev.host') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "config" WHERE ("config"."key" = 'dev.host') LIMIT 1[0m
+  [4;35;1mPage Load (0.000512)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."parent_id" IS NULL) LIMIT 1[0m
+  [4;36;1mPage Load (0.000998)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."slug" = 'contact') AND ("pages".parent_id = 1) ORDER BY virtual DESC, title ASC LIMIT 1[0m
+  [4;35;1mPage Load (0.000422)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+  [4;36;1mLayout Load (0.000359)[0m   [0;1mSELECT * FROM "layouts" WHERE ("layouts"."id" = 1) ORDER BY name[0m
+  [4;35;1mPagePart Load (0.000891)[0m   [0mSELECT * FROM "page_parts" WHERE ("page_parts".page_id = 7) ORDER BY id[0m
+  [4;36;1mPagePart Load (0.000241)[0m   [0;1mSELECT * FROM "page_parts" WHERE ("page_parts"."name" = 'body') AND ("page_parts".page_id = 7) ORDER BY id LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "config" WHERE ("config"."key" = 'dev.host') LIMIT 1[0m
+Cached page: /Users/burke/src/facultyclub/cache/contact (0.00105)
+Completed in 0.18430 (5 reqs/sec) | DB: 0.00508 (2%) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.000452)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000577)[0m   [0mSELECT DISTINCT class_name FROM pages WHERE class_name <> '' AND class_name IS NOT NULL[0m
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2009-04-15 13:29:01) [GET]
+  Parameters: {"url"=>"/", "action"=>"show_page", "controller"=>"site"}
+  [4;36;1mRadiant::Config Load (0.000758)[0m   [0;1mSELECT * FROM "config" WHERE ("config"."key" = 'dev.host') LIMIT 1[0m
+Completed in 0.00403 (248 reqs/sec) | DB: 0.00076 (18%) | 304 Not Modified [http://localhost/]
+  [4;35;1mSQL (0.000527)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000585)[0m   [0;1mSELECT DISTINCT class_name FROM pages WHERE class_name <> '' AND class_name IS NOT NULL[0m
+
+
+Processing Admin::WelcomeController#index (for 127.0.0.1 at 2009-04-15 13:30:17) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlOTZkNDE0NzhjMTYyMjJhYTVl
+Y2JkZDE5ZmJhOTRjNGMiDHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--5e5ac8cfc0b672aa5ecb1733bc65cb7a6995530c
+  Parameters: {"action"=>"index", "controller"=>"admin/welcome"}
+  [4;35;1mUser Load (0.000370)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) ORDER BY name[0m
+Redirected to http://localhost:3000/admin/pages
+Completed in 0.00538 (185 reqs/sec) | DB: 0.00037 (6%) | 302 Found [http://localhost/admin]
+  [4;36;1mSQL (0.000698)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000627)[0m   [0mSELECT DISTINCT class_name FROM pages WHERE class_name <> '' AND class_name IS NOT NULL[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-15 13:30:18) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlOTZkNDE0NzhjMTYyMjJhYTVl
+Y2JkZDE5ZmJhOTRjNGMiDHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--5e5ac8cfc0b672aa5ecb1733bc65cb7a6995530c
+  Parameters: {"action"=>"index", "controller"=>"admin/pages"}
+  [4;36;1mUser Load (0.000318)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) ORDER BY name[0m
+  [4;35;1mPage Load (0.001109)[0m   [0mSELECT * FROM "pages" [0m
+  [4;36;1mPage Load (0.000421)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."parent_id" IS NULL) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/pages/index
+  [4;35;1mSQL (0.000230)[0m   [0mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 1) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 1) [0m
+  [4;35;1mPage Load (0.001327)[0m   [0mSELECT * FROM "pages" WHERE ("pages".parent_id = 1) ORDER BY virtual DESC, title ASC[0m
+  [4;36;1mSQL (0.000190)[0m   [0;1mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 2) [0m
+  [4;35;1mPage Load (0.000375)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+Rendered admin/pages/_node (0.00420)
+  [4;36;1mSQL (0.000203)[0m   [0;1mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 7) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+Rendered admin/pages/_node (0.00341)
+  [4;36;1mSQL (0.000214)[0m   [0;1mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 5) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+Rendered admin/pages/_node (0.00352)
+  [4;36;1mSQL (0.000185)[0m   [0;1mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 8) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 8) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+  [4;35;1mPage Load (0.001090)[0m   [0mSELECT * FROM "pages" WHERE ("pages".parent_id = 8) ORDER BY virtual DESC, title ASC[0m
+  [4;36;1mSQL (0.000168)[0m   [0;1mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 9) [0m
+  [4;35;1mPage Load (0.000349)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 8) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+Rendered admin/pages/_node (0.00444)
+  [4;35;1mSQL (0.000259)[0m   [0mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 10) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 8) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+Rendered admin/pages/_node (0.00496)
+Rendered admin/pages/_node (0.01549)
+Rendered admin/pages/_node (0.04312)
+  [4;36;1mRadiant::Config Load (0.000318)[0m   [0;1mSELECT * FROM "config" WHERE ("config"."key" = 'admin.title') LIMIT 1[0m
+  [4;35;1mRadiant::Config Load (0.000175)[0m   [0mSELECT * FROM "config" WHERE ("config"."key" = 'admin.subtitle') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "config" WHERE ("config"."key" = 'admin.title') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "config" WHERE ("config"."key" = 'admin.subtitle') LIMIT 1[0m
+Completed in 0.15596 (6 reqs/sec) | Rendering: 0.14197 (91%) | DB: 0.00693 (4%) | 200 OK [http://localhost/admin/pages]
+  [4;36;1mSQL (0.000442)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000523)[0m   [0mSELECT DISTINCT class_name FROM pages WHERE class_name <> '' AND class_name IS NOT NULL[0m
+
+
+Processing Admin::PagesController#edit (for 127.0.0.1 at 2009-04-15 13:30:23) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlOTZkNDE0NzhjMTYyMjJhYTVl
+Y2JkZDE5ZmJhOTRjNGMiDHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--5e5ac8cfc0b672aa5ecb1733bc65cb7a6995530c
+  Parameters: {"action"=>"edit", "id"=>"8", "controller"=>"admin/pages"}
+  [4;36;1mUser Load (0.000318)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) ORDER BY name[0m
+  [4;35;1mPage Load (0.000344)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 8) [0m
+Rendering template within layouts/application
+Rendering admin/pages/edit
+Rendered admin/pages/_meta_row (0.00024)
+Rendered admin/pages/_meta_row (0.00022)
+Rendered admin/pages/_meta_row (0.00022)
+Rendered admin/pages/_meta_row (0.00022)
+  [4;36;1mSQL (0.000235)[0m   [0;1mSELECT count(*) AS count_all FROM "page_parts" WHERE ("page_parts".page_id = 8) [0m
+  [4;35;1mPagePart Load (0.000866)[0m   [0mSELECT * FROM "page_parts" WHERE ("page_parts".page_id = 8) ORDER BY id[0m
+Rendered admin/page_parts/_page_part (0.02249)
+Rendered admin/page_parts/_page_part (0.02446)
+  [4;36;1mLayout Load (0.000991)[0m   [0;1mSELECT * FROM "layouts" ORDER BY name[0m
+  [4;35;1mRadiant::Config Load (0.000245)[0m   [0mSELECT * FROM "config" WHERE ("config"."key" = 'page.edit.published_date?') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) ORDER BY name[0m
+  [4;35;1mRadiant::Config Load (0.000185)[0m   [0mSELECT * FROM "config" WHERE ("config"."key" = 'local.timezone') LIMIT 1[0m
+Rendered admin/pages/_fields (0.10429)
+  [4;36;1mRadiant::Config Load (0.000287)[0m   [0;1mSELECT * FROM "config" WHERE ("config"."key" = 'defaults.page.filter') LIMIT 1[0m
+Rendered admin/references/_tag_reference (0.00005)
+Rendered admin/references/_tag_reference (0.00004)
+Rendered admin/references/_tag_reference (0.00007)
+Rendered admin/references/_tag_reference (0.00007)
+Rendered admin/references/_tag_reference (0.00004)
+Rendered admin/references/_tag_reference (0.00007)
+Rendered admin/references/_tag_reference (0.00007)
+Rendered admin/references/_tag_reference (0.00008)
+Rendered admin/references/_tag_reference (0.00010)
+Rendered admin/references/_tag_reference (0.00007)
+Rendered admin/references/_tag_reference (0.00007)
+Rendered admin/references/_tag_reference (0.00007)
+Rendered admin/references/_tag_reference (0.00006)
+Rendered admin/references/_tag_reference (0.00006)
+Rendered admin/references/_tag_reference (0.00006)
+Rendered admin/references/_tag_reference (0.00007)
+Rendered admin/references/_tag_reference (0.00006)
+Rendered admin/references/_tag_reference (0.00007)
+Rendered admin/references/_tag_reference (0.00006)
+Rendered admin/references/_tag_reference (0.00006)
+Rendered admin/references/_tag_reference (0.00006)
+Rendered admin/references/_tag_reference (0.00007)
+Rendered admin/references/_tag_reference (0.00007)
+Rendered admin/references/_tag_reference (0.00006)
+Rendered admin/references/_tag_reference (0.00006)
+Rendered admin/references/_tag_reference (0.00030)
+Rendered admin/references/_tag_reference (0.00007)
+Rendered admin/references/_tag_reference (0.00009)
+Rendered admin/references/_tag_reference (0.00006)
+Rendered admin/references/_tag_reference (0.00007)
+Rendered admin/references/_tag_reference (0.00006)
+Rendered admin/references/_tag_reference (0.00006)
+Rendered admin/references/_tag_reference (0.00009)
+Rendered admin/references/_tag_reference (0.00006)
+Rendered admin/references/_tag_reference (0.00006)
+Rendered admin/references/_tag_reference (0.00007)
+Rendered admin/references/_tag_reference (0.00006)
+Rendered admin/references/_tag_reference (0.00004)
+Rendered admin/references/_tag_reference (0.00007)
+Rendered admin/references/_tag_reference (0.00007)
+Rendered admin/references/_tag_reference (0.00006)
+Rendered admin/references/_tag_reference (0.00008)
+Rendered admin/references/_tag_reference (0.00004)
+Rendered admin/references/_tag_reference (0.00006)
+Rendered admin/references/_tag_reference (0.00007)
+Rendered admin/references/_tag_reference (0.00007)
+Rendered admin/references/_tag_reference (0.00006)
+Rendered admin/references/_tag_reference (0.00006)
+Rendered admin/references/_tag_reference (0.00006)
+Rendered admin/references/_tag_reference (0.00006)
+Rendered admin/references/_tag_reference (0.00004)
+Rendered admin/references/_tag_reference (0.00009)
+Rendered admin/pages/_popups (0.05134)
+Rendered admin/pages/_edit_styles (0.00064)
+  [4;35;1mRadiant::Config Load (0.000289)[0m   [0mSELECT * FROM "config" WHERE ("config"."key" = 'admin.title') LIMIT 1[0m
+  [4;36;1mRadiant::Config Load (0.000176)[0m   [0;1mSELECT * FROM "config" WHERE ("config"."key" = 'admin.subtitle') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "config" WHERE ("config"."key" = 'admin.title') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "config" WHERE ("config"."key" = 'admin.subtitle') LIMIT 1[0m
+Completed in 0.17688 (5 reqs/sec) | Rendering: 0.16712 (94%) | DB: 0.00394 (2%) | 200 OK [http://localhost/admin/pages/8/edit]
+  [4;35;1mSQL (0.000447)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000542)[0m   [0;1mSELECT DISTINCT class_name FROM pages WHERE class_name <> '' AND class_name IS NOT NULL[0m
+
+
+Processing Admin::WelcomeController#index (for 127.0.0.1 at 2009-04-15 13:31:13) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlOTZkNDE0NzhjMTYyMjJhYTVl
+Y2JkZDE5ZmJhOTRjNGMiDHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--5e5ac8cfc0b672aa5ecb1733bc65cb7a6995530c
+  Parameters: {"action"=>"index", "controller"=>"admin/welcome"}
+  [4;35;1mUser Load (0.000318)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) ORDER BY name[0m
+Redirected to http://localhost:3000/admin/pages
+Completed in 0.00515 (194 reqs/sec) | DB: 0.00032 (6%) | 302 Found [http://localhost/admin]
+  [4;36;1mSQL (0.000438)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000572)[0m   [0mSELECT DISTINCT class_name FROM pages WHERE class_name <> '' AND class_name IS NOT NULL[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-15 13:31:13) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlOTZkNDE0NzhjMTYyMjJhYTVl
+Y2JkZDE5ZmJhOTRjNGMiDHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--5e5ac8cfc0b672aa5ecb1733bc65cb7a6995530c
+  Parameters: {"action"=>"index", "controller"=>"admin/pages"}
+  [4;36;1mUser Load (0.000344)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) ORDER BY name[0m
+  [4;35;1mPage Load (0.001130)[0m   [0mSELECT * FROM "pages" [0m
+  [4;36;1mPage Load (0.000390)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."parent_id" IS NULL) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/pages/index
+  [4;35;1mSQL (0.000213)[0m   [0mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 1) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 1) [0m
+  [4;35;1mPage Load (0.001360)[0m   [0mSELECT * FROM "pages" WHERE ("pages".parent_id = 1) ORDER BY virtual DESC, title ASC[0m
+  [4;36;1mSQL (0.000237)[0m   [0;1mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 2) [0m
+  [4;35;1mPage Load (0.000406)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+Rendered admin/pages/_node (0.00497)
+  [4;36;1mSQL (0.000201)[0m   [0;1mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 7) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+Rendered admin/pages/_node (0.00336)
+  [4;36;1mSQL (0.000203)[0m   [0;1mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 5) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+Rendered admin/pages/_node (0.00338)
+  [4;36;1mSQL (0.000199)[0m   [0;1mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 8) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 8) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+  [4;35;1mPage Load (0.001991)[0m   [0mSELECT * FROM "pages" WHERE ("pages".parent_id = 8) ORDER BY virtual DESC, title ASC[0m
+  [4;36;1mSQL (0.000200)[0m   [0;1mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 9) [0m
+  [4;35;1mPage Load (0.000350)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 8) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+Rendered admin/pages/_node (0.00441)
+  [4;35;1mSQL (0.000181)[0m   [0mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 10) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 8) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+Rendered admin/pages/_node (0.00387)
+Rendered admin/pages/_node (0.01501)
+Rendered admin/pages/_node (0.04157)
+  [4;36;1mRadiant::Config Load (0.000250)[0m   [0;1mSELECT * FROM "config" WHERE ("config"."key" = 'admin.title') LIMIT 1[0m
+  [4;35;1mRadiant::Config Load (0.000175)[0m   [0mSELECT * FROM "config" WHERE ("config"."key" = 'admin.subtitle') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "config" WHERE ("config"."key" = 'admin.title') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "config" WHERE ("config"."key" = 'admin.subtitle') LIMIT 1[0m
+Completed in 0.05827 (17 reqs/sec) | Rendering: 0.04354 (74%) | DB: 0.00783 (13%) | 200 OK [http://localhost/admin/pages]
+  [4;36;1mSQL (0.000443)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000530)[0m   [0mSELECT DISTINCT class_name FROM pages WHERE class_name <> '' AND class_name IS NOT NULL[0m
+
+
+Processing Admin::PagesController#remove (for 127.0.0.1 at 2009-04-15 13:31:18) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlOTZkNDE0NzhjMTYyMjJhYTVl
+Y2JkZDE5ZmJhOTRjNGMiDHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--5e5ac8cfc0b672aa5ecb1733bc65cb7a6995530c
+  Parameters: {"action"=>"remove", "id"=>"9", "controller"=>"admin/pages"}
+  [4;36;1mUser Load (0.000323)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) ORDER BY name[0m
+  [4;35;1mPage Load (0.000353)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 9) [0m
+Rendering template within layouts/application
+Rendering admin/pages/remove
+  [4;36;1mSQL (0.000226)[0m   [0;1mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 9) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 9) [0m
+Rendered admin/pages/_node (0.00662)
+  [4;36;1mRadiant::Config Load (0.000283)[0m   [0;1mSELECT * FROM "config" WHERE ("config"."key" = 'admin.title') LIMIT 1[0m
+  [4;35;1mRadiant::Config Load (0.000175)[0m   [0mSELECT * FROM "config" WHERE ("config"."key" = 'admin.subtitle') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "config" WHERE ("config"."key" = 'admin.title') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "config" WHERE ("config"."key" = 'admin.subtitle') LIMIT 1[0m
+Completed in 0.02164 (46 reqs/sec) | Rendering: 0.01439 (66%) | DB: 0.00136 (6%) | 200 OK [http://localhost/admin/pages/9/remove]
+  [4;36;1mSQL (0.000466)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000541)[0m   [0mSELECT DISTINCT class_name FROM pages WHERE class_name <> '' AND class_name IS NOT NULL[0m
+
+
+Processing Admin::PagesController#destroy (for 127.0.0.1 at 2009-04-15 13:31:20) [DELETE]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlOTZkNDE0NzhjMTYyMjJhYTVl
+Y2JkZDE5ZmJhOTRjNGMiDHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--5e5ac8cfc0b672aa5ecb1733bc65cb7a6995530c
+  Parameters: {"action"=>"destroy", "_method"=>"delete", "authenticity_token"=>"c8bca4d1f4731d450909bc163863a32ccad106ac", "id"=>"9", "controller"=>"admin/pages"}
+  [4;36;1mUser Load (0.000339)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) ORDER BY name[0m
+  [4;35;1mPage Load (0.000358)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 9) [0m
+  [4;36;1mPage Load (0.000657)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages".parent_id = 9) ORDER BY virtual DESC, title ASC[0m
+  [4;35;1mPagePart Load (0.000809)[0m   [0mSELECT * FROM "page_parts" WHERE ("page_parts".page_id = 9) ORDER BY id[0m
+  [4;36;1mPagePart Destroy (0.000702)[0m   [0;1m DELETE FROM "page_parts"
+ WHERE "id" = 21
+[0m
+  [4;35;1mPagePart Destroy (0.000106)[0m   [0m DELETE FROM "page_parts"
+ WHERE "id" = 22
+[0m
+  [4;36;1mPage Destroy (0.000312)[0m   [0;1m DELETE FROM "pages"
+ WHERE "id" = 9
+[0m
+Redirected to http://localhost:3000/admin/pages
+Completed in 0.02296 (43 reqs/sec) | DB: 0.00328 (14%) | 302 Found [http://localhost/admin/pages/9]
+  [4;35;1mSQL (0.000505)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000539)[0m   [0;1mSELECT DISTINCT class_name FROM pages WHERE class_name <> '' AND class_name IS NOT NULL[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-15 13:31:21) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlOTZkNDE0NzhjMTYyMjJhYTVl
+Y2JkZDE5ZmJhOTRjNGMiDHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiG1BhZ2UgaGFz
+IGJlZW4gZGVsZXRlZC4GOgpAdXNlZHsGOwhG--6c367a4a33a775acf148f1afd5cbfd71dfcb95ad
+  Parameters: {"action"=>"index", "controller"=>"admin/pages"}
+  [4;35;1mUser Load (0.000330)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) ORDER BY name[0m
+  [4;36;1mPage Load (0.001117)[0m   [0;1mSELECT * FROM "pages" [0m
+  [4;35;1mPage Load (0.000462)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."parent_id" IS NULL) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/pages/index
+  [4;36;1mSQL (0.000267)[0m   [0;1mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 1) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 1) [0m
+  [4;36;1mPage Load (0.001296)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages".parent_id = 1) ORDER BY virtual DESC, title ASC[0m
+  [4;35;1mSQL (0.000199)[0m   [0mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 2) [0m
+  [4;36;1mPage Load (0.000352)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+Rendered admin/pages/_node (0.00400)
+  [4;35;1mSQL (0.000174)[0m   [0mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 7) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+Rendered admin/pages/_node (0.00336)
+  [4;35;1mSQL (0.000207)[0m   [0mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 5) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+Rendered admin/pages/_node (0.00345)
+  [4;35;1mSQL (0.000197)[0m   [0mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 8) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 8) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+  [4;36;1mPage Load (0.000827)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages".parent_id = 8) ORDER BY virtual DESC, title ASC[0m
+  [4;35;1mSQL (0.000158)[0m   [0mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 10) [0m
+  [4;36;1mPage Load (0.000338)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 8) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+Rendered admin/pages/_node (0.00418)
+Rendered admin/pages/_node (0.00917)
+Rendered admin/pages/_node (0.03493)
+  [4;36;1mRadiant::Config Load (0.000264)[0m   [0;1mSELECT * FROM "config" WHERE ("config"."key" = 'admin.title') LIMIT 1[0m
+  [4;35;1mRadiant::Config Load (0.000215)[0m   [0mSELECT * FROM "config" WHERE ("config"."key" = 'admin.subtitle') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "config" WHERE ("config"."key" = 'admin.title') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "config" WHERE ("config"."key" = 'admin.subtitle') LIMIT 1[0m
+Completed in 0.05241 (19 reqs/sec) | Rendering: 0.03845 (73%) | DB: 0.00640 (12%) | 200 OK [http://localhost/admin/pages]
+  [4;36;1mSQL (0.000513)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000519)[0m   [0mSELECT DISTINCT class_name FROM pages WHERE class_name <> '' AND class_name IS NOT NULL[0m
+
+
+Processing Admin::PagesController#remove (for 127.0.0.1 at 2009-04-15 13:31:23) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlOTZkNDE0NzhjMTYyMjJhYTVl
+Y2JkZDE5ZmJhOTRjNGMiDHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiG1BhZ2UgaGFz
+IGJlZW4gZGVsZXRlZC4GOgpAdXNlZHsGOwhU--1da2b79f51d1877bfe31bec9cb3258beee606079
+  Parameters: {"action"=>"remove", "id"=>"10", "controller"=>"admin/pages"}
+  [4;36;1mUser Load (0.000318)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) ORDER BY name[0m
+  [4;35;1mPage Load (0.000335)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 10) [0m
+Rendering template within layouts/application
+Rendering admin/pages/remove
+  [4;36;1mSQL (0.000219)[0m   [0;1mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 10) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 10) [0m
+Rendered admin/pages/_node (0.00660)
+  [4;36;1mRadiant::Config Load (0.000279)[0m   [0;1mSELECT * FROM "config" WHERE ("config"."key" = 'admin.title') LIMIT 1[0m
+  [4;35;1mRadiant::Config Load (0.000189)[0m   [0mSELECT * FROM "config" WHERE ("config"."key" = 'admin.subtitle') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "config" WHERE ("config"."key" = 'admin.title') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "config" WHERE ("config"."key" = 'admin.subtitle') LIMIT 1[0m
+Completed in 0.02186 (45 reqs/sec) | Rendering: 0.01462 (66%) | DB: 0.00134 (6%) | 200 OK [http://localhost/admin/pages/10/remove]
+  [4;36;1mSQL (0.000515)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000545)[0m   [0mSELECT DISTINCT class_name FROM pages WHERE class_name <> '' AND class_name IS NOT NULL[0m
+
+
+Processing Admin::PagesController#destroy (for 127.0.0.1 at 2009-04-15 13:31:25) [DELETE]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlOTZkNDE0NzhjMTYyMjJhYTVl
+Y2JkZDE5ZmJhOTRjNGMiDHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--5e5ac8cfc0b672aa5ecb1733bc65cb7a6995530c
+  Parameters: {"action"=>"destroy", "_method"=>"delete", "authenticity_token"=>"c8bca4d1f4731d450909bc163863a32ccad106ac", "id"=>"10", "controller"=>"admin/pages"}
+  [4;36;1mUser Load (0.000321)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) ORDER BY name[0m
+  [4;35;1mPage Load (0.000341)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 10) [0m
+  [4;36;1mPage Load (0.000607)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages".parent_id = 10) ORDER BY virtual DESC, title ASC[0m
+  [4;35;1mPagePart Load (0.000744)[0m   [0mSELECT * FROM "page_parts" WHERE ("page_parts".page_id = 10) ORDER BY id[0m
+  [4;36;1mPagePart Destroy (0.000370)[0m   [0;1m DELETE FROM "page_parts"
+ WHERE "id" = 23
+[0m
+  [4;35;1mPagePart Destroy (0.000066)[0m   [0m DELETE FROM "page_parts"
+ WHERE "id" = 24
+[0m
+  [4;36;1mPage Destroy (0.000172)[0m   [0;1m DELETE FROM "pages"
+ WHERE "id" = 10
+[0m
+Redirected to http://localhost:3000/admin/pages
+Completed in 0.01784 (56 reqs/sec) | DB: 0.00262 (14%) | 302 Found [http://localhost/admin/pages/10]
+  [4;35;1mSQL (0.000505)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000562)[0m   [0;1mSELECT DISTINCT class_name FROM pages WHERE class_name <> '' AND class_name IS NOT NULL[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-15 13:31:25) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlOTZkNDE0NzhjMTYyMjJhYTVl
+Y2JkZDE5ZmJhOTRjNGMiDHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiG1BhZ2UgaGFz
+IGJlZW4gZGVsZXRlZC4GOgpAdXNlZHsGOwhG--6c367a4a33a775acf148f1afd5cbfd71dfcb95ad
+  Parameters: {"action"=>"index", "controller"=>"admin/pages"}
+  [4;35;1mUser Load (0.000318)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) ORDER BY name[0m
+  [4;36;1mPage Load (0.000895)[0m   [0;1mSELECT * FROM "pages" [0m
+  [4;35;1mPage Load (0.000382)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."parent_id" IS NULL) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/pages/index
+  [4;36;1mSQL (0.000210)[0m   [0;1mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 1) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 1) [0m
+  [4;36;1mPage Load (0.001283)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages".parent_id = 1) ORDER BY virtual DESC, title ASC[0m
+  [4;35;1mSQL (0.000173)[0m   [0mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 2) [0m
+  [4;36;1mPage Load (0.000341)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+Rendered admin/pages/_node (0.00372)
+  [4;35;1mSQL (0.000169)[0m   [0mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 7) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+Rendered admin/pages/_node (0.00321)
+  [4;35;1mSQL (0.000176)[0m   [0mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 5) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+Rendered admin/pages/_node (0.00337)
+  [4;35;1mSQL (0.000213)[0m   [0mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 8) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+Rendered admin/pages/_node (0.00354)
+Rendered admin/pages/_node (0.02821)
+  [4;35;1mRadiant::Config Load (0.000251)[0m   [0mSELECT * FROM "config" WHERE ("config"."key" = 'admin.title') LIMIT 1[0m
+  [4;36;1mRadiant::Config Load (0.000173)[0m   [0;1mSELECT * FROM "config" WHERE ("config"."key" = 'admin.subtitle') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "config" WHERE ("config"."key" = 'admin.title') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "config" WHERE ("config"."key" = 'admin.subtitle') LIMIT 1[0m
+Completed in 0.04432 (22 reqs/sec) | Rendering: 0.03305 (74%) | DB: 0.00458 (10%) | 200 OK [http://localhost/admin/pages]
+  [4;35;1mSQL (0.000444)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000580)[0m   [0;1mSELECT DISTINCT class_name FROM pages WHERE class_name <> '' AND class_name IS NOT NULL[0m
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2009-04-15 14:59:34) [GET]
+  Parameters: {"url"=>["menu"], "action"=>"show_page", "controller"=>"site"}
+  [4;35;1mRadiant::Config Load (0.000719)[0m   [0mSELECT * FROM "config" WHERE ("config"."key" = 'dev.host') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "config" WHERE ("config"."key" = 'dev.host') LIMIT 1[0m
+  [4;35;1mPage Load (0.000390)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."parent_id" IS NULL) LIMIT 1[0m
+  [4;36;1mPage Load (0.000916)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."slug" = 'menu') AND ("pages".parent_id = 1) ORDER BY virtual DESC, title ASC LIMIT 1[0m
+  [4;35;1mPage Load (0.000354)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+  [4;36;1mLayout Load (0.000370)[0m   [0;1mSELECT * FROM "layouts" WHERE ("layouts"."id" = 1) ORDER BY name[0m
+  [4;35;1mPagePart Load (0.001229)[0m   [0mSELECT * FROM "page_parts" WHERE ("page_parts".page_id = 8) ORDER BY id[0m
+  [4;36;1mPagePart Load (0.000397)[0m   [0;1mSELECT * FROM "page_parts" WHERE ("page_parts"."name" = 'body') AND ("page_parts".page_id = 8) ORDER BY id LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "config" WHERE ("config"."key" = 'dev.host') LIMIT 1[0m
+Cached page: /Users/burke/src/facultyclub/cache/menu (0.00079)
+Completed in 0.07826 (12 reqs/sec) | DB: 0.00437 (5%) | 200 OK [http://localhost/menu]
+  [4;36;1mSQL (0.000556)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000613)[0m   [0mSELECT DISTINCT class_name FROM pages WHERE class_name <> '' AND class_name IS NOT NULL[0m
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2009-04-15 17:18:15) [GET]
+  Parameters: {"url"=>["menu"], "action"=>"show_page", "controller"=>"site"}
+  [4;36;1mRadiant::Config Load (0.000700)[0m   [0;1mSELECT * FROM "config" WHERE ("config"."key" = 'dev.host') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "config" WHERE ("config"."key" = 'dev.host') LIMIT 1[0m
+  [4;36;1mPage Load (0.000378)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."parent_id" IS NULL) LIMIT 1[0m
+  [4;35;1mPage Load (0.000943)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."slug" = 'menu') AND ("pages".parent_id = 1) ORDER BY virtual DESC, title ASC LIMIT 1[0m
+  [4;36;1mPage Load (0.000346)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+  [4;35;1mLayout Load (0.000284)[0m   [0mSELECT * FROM "layouts" WHERE ("layouts"."id" = 1) ORDER BY name[0m
+  [4;36;1mPagePart Load (0.000851)[0m   [0;1mSELECT * FROM "page_parts" WHERE ("page_parts".page_id = 8) ORDER BY id[0m
+  [4;35;1mPagePart Load (0.000225)[0m   [0mSELECT * FROM "page_parts" WHERE ("page_parts"."name" = 'body') AND ("page_parts".page_id = 8) ORDER BY id LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "config" WHERE ("config"."key" = 'dev.host') LIMIT 1[0m
+Cached page: /Users/burke/src/facultyclub/cache/menu (0.00063)
+Completed in 0.05908 (16 reqs/sec) | DB: 0.00373 (6%) | 200 OK [http://localhost/menu]
+  [4;35;1mSQL (0.000449)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000540)[0m   [0;1mSELECT DISTINCT class_name FROM pages WHERE class_name <> '' AND class_name IS NOT NULL[0m
