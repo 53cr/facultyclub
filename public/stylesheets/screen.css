@@ -1,0 +1,150 @@
+html {
+    background: #131313;
+}
+
+body {
+    background: url(/images/bg.png) top left repeat-x;
+    margin: 0 auto;
+}
+
+#content {
+    margin: 0 auto;
+    width: 800px;
+    text-align: center;
+}
+
+/* NAV MENU ******************************/
+#nav {
+    margin: 0 auto;
+    width: 215px;
+    float: right;
+    text-align: left;
+}
+
+#nav ul {
+    margin: 108px 0 0 20px;
+}
+
+#nav li {
+    margin-bottom: 27px;
+    font-family: helvetica, arial, sans;
+    font-variant: small-caps;
+}
+
+/* END NAV MENU ******************************/
+
+#main {
+    width: 585px;
+    background: url(/images/main-bg.png) top left white;
+}
+
+
+#header {
+    background: url(/images/header-bg.png) top right no-repeat;
+    height: 310px;
+}
+
+/* Header image replacement ******************************/
+#header h1 {
+    height: 94px;
+    width: 290px;
+    overflow: hidden;
+    position: relative;
+    background: url(/images/university_club.png) top left no-repeat;
+    margin: 0;
+}
+
+#header h1 a {
+    display: block;
+    height: 100%; 
+    width: 100%;
+}
+
+#header h1 a span {
+    display:block;
+    height:100%;
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    background:url(/images/university_club.png) top left no-repeat;
+    cursor:pointer; /* ie demands we reinstate the pointer cursor */
+}
+/* END Header image replacement ******************************/
+
+#header-image-frame {
+    height: 215px;
+    margin-left: 16px;
+}
+
+#header-image-frame img.frame {
+    position: absolute;
+    z-index: 9000;
+}
+
+#body {
+    margin: 0 15px 0 15px;
+    text-align: left;
+}
+
+#body h1 {
+    color: #222;
+    font-size: 48px;
+    text-align: right;
+    margin: 0 0 5px 0;
+    border-bottom: 1px solid #666;
+}
+
+#body h2 {
+    font-size: 32px;
+    text-align: left;
+    margin: 0 0 5px 0;
+    border-bottom: 1px solid #aaa;
+}
+
+#body h4 {
+    font-weight: bold;
+    margin-bottom: 0.2em;
+}
+
+#body p {
+    width: 440px;
+    margin-bottom: 1em;
+    margin-left: 15px;
+}
+
+#body p.price {
+    width: auto;
+    float: right;
+    font-family: georgia;
+    font-size: 18px;
+    margin: auto;
+}
+
+
+
+/* SLIDESHOW ******************************/
+
+#slideshow {
+    z-index: 1;
+    position:relative;
+    height:350px;
+}
+
+#slideshow IMG {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:8;
+    opacity:0.0;
+}
+
+#slideshow IMG.active {
+    z-index:10;
+    opacity:1.0;
+}
+
+#slideshow IMG.last-active {
+    z-index:9;
+}
+
