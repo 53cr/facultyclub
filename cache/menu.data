@@ -8,8 +8,8 @@
     <script type="text/javascript" src="/javascripts/cufon-yui.js"></script>
     <script type="text/javascript" src="/javascripts/Jellyka_Saint-Andrews_Queen_400.font.js"></script>
     <script type="text/javascript">
-      Cufon.replace("#body h1");
-      Cufon.replace("#body h2");
+      Cufon.replace("h1");
+      Cufon.replace("h2");
     </script>
     <script type="text/javascript" src="/javascripts/jquery.js"></script>
     <script type="text/javascript" src="/javascripts/slideshow.js"></script>
