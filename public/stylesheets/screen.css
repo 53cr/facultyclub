@@ -145,8 +145,11 @@ body {
     display: block;
     float: left;
     background: url(/images/main-bg.png) top left repeat;
-    font-weight: bold;
     padding: 0 8px 0 0;
+}
+
+#menu p.title strong {
+    font-weight: bold;
 }
 
 #body p.title em {
