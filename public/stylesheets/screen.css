@@ -5,7 +5,7 @@ html {
 
 body {
     margin: 0 auto;
-    background: url(/images/body-bg.gif) top center repeat-y;
+ background: url(/images/body-bg.gif) top center repeat-y;
     height: 100%;
 }
 
@@ -137,7 +137,7 @@ body {
 #slideshow {
     z-index: 1;
     position:relative;
-    height:350px;
+    height:215px;
 }
 
 #slideshow IMG {
@@ -156,4 +156,21 @@ body {
 #slideshow IMG.last-active {
     z-index:9;
 }
+
+/* FOOTER ******************************/
+
+#footer {
+    text-align: center;
+    font-size: 85%;
+    color: #777;
+    border-top: 1px solid #aaa;
+    padding-bottom: 8px;
+}
+
+#footer a {
+    color: #a00;
+    text-decoration: none;
+}
+
+/* END FOOTER ******************************/
 
