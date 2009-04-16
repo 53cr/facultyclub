@@ -15,9 +15,6 @@ body {
     text-align: center;
 }
 
-.cr {
-    clear: right;
-}
 
 /* NAV MENU ******************************/
 #nav {
@@ -143,13 +140,16 @@ body {
 }
 
 #body p.price-s {
+    clear: both;
     width: auto;
     float: right;
     font-family: georgia;
     font-size: 14px;
     margin: auto;
-    position: relative;
-    top: -10px;
+}
+
+#body p.cr {
+    float: left;
 }
 
 
