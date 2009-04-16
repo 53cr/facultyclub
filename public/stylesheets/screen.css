@@ -123,20 +123,38 @@ body {
     width: 440px;
     margin-bottom: 1em;
     margin-left: 15px;
+    clear: both;
 }
 
 #body li {
     
 }
 
-#body p.price {
+#body p.title {
+    clear: both;
+    width: auto;
+    border-bottom: dotted 2px #999;
+    margin-left: 0;
+    height: 1em;
+}
+
+#body p.title strong {
+    display: block;
+    float: left;
+    background: url(/images/main-bg.png) top left repeat;
+    font-weight: bold;
+    padding: 0 8px 0 0;
+}
+
+#body p.title em {
+    background: url(/images/main-bg.png) top left repeat;
+    display: block;
     width: auto;
     float: right;
+    padding: 0 0 0 8px;
     font-family: georgia;
     font-size: 18px;
     margin: auto;
-    position: relative;
-    top: -10px;
 }
 
 #body p.price-s {
