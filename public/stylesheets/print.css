@@ -3,7 +3,9 @@ html, body, #body, #main {
     margin: 0 auto;
 }
     
-#nav, #slideshow {
+
+
+#nav, #header-image-frame {
     display: none;
 }
 
