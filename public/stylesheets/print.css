@@ -1,0 +1,8 @@
+html, body, #body, #main {
+    background: none;
+    margin: 0 auto;
+}
+    
+#nav {
+    display: none;
+}
