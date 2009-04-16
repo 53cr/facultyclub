@@ -97,6 +97,11 @@ body {
     text-align: left;
 }
 
+#body a {
+    color: #a00;
+    text-decoration: none;
+}
+
 #body h2 {
     color: #222;
     font-size: 48px;
