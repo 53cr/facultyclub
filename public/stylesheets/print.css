@@ -3,7 +3,9 @@ html, body, #body, #main {
     margin: 0 auto;
 }
     
-
+#header {
+    height: auto;
+}
 
 #nav, #header-image-frame {
     display: none;
