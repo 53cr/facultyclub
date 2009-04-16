@@ -47,7 +47,7 @@ body {
 
 
 #header {
-    background: url(/images/header-bg.png) top right no-repeat;
+/*    background: url(/images/header-bg.png) top right no-repeat;  UNCOMMENT TO USE UOFM LOGO */
     height: 310px;
     text-align: left;
 }
@@ -174,3 +174,20 @@ body {
 
 /* END FOOTER ******************************/
 
+#upcoming-events {
+    font-size: 10px;
+    color: #ddd;
+    margin-left: 20px;
+    size: 
+}
+
+#upcoming-events h3 {
+    font-size: 12px; 
+    margin: 0 0 2px -10px;
+    border-bottom: 1px dotted #666;
+}
+
+#upcoming-events h4 {
+    margin-left: -10px;
+    font-size: 12px;
+}
