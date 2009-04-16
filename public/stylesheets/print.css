@@ -11,7 +11,9 @@ html, body, #body, #main {
     display: none;
 }
 
-h1, h2, h3 {
+
+h1, h2, h3,
+#header h1 {
     text-align: left;
     font-size: 77%;
     overflow: auto;
