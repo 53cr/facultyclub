@@ -114,6 +114,7 @@ body {
 #body h4 {
     font-weight: bold;
     margin-bottom: 0.2em;
+    clear: right;
 }
 
 #body p {
