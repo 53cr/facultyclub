@@ -181,7 +181,7 @@ body {
     size: 
 }
 
-#upcoming-events h3 {
+#upcoming-events h4.section {
     font-size: 12px; 
     margin: 0 0 2px -10px;
     border-bottom: 1px dotted #666;
