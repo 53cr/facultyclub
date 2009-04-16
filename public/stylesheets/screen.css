@@ -134,8 +134,11 @@ body {
     clear: both;
     width: auto;
     border-bottom: dotted 2px #999;
-    margin-left: 0;
     height: 1em;
+}
+
+#menu p.title {
+    margin-left: 0;
 }
 
 #body p.title strong {
