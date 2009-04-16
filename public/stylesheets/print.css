@@ -3,6 +3,10 @@ html, body, #body, #main {
     margin: 0 auto;
 }
     
-#nav {
+#nav, #slideshow {
     display: none;
+}
+
+h1, h2, h3 {
+    font-size: 77%;
 }
