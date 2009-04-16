@@ -20,3 +20,7 @@ h1, h2, h3,
     position: static;
     background: none;
 }
+
+#header h1 a span {
+    display: none;
+}
