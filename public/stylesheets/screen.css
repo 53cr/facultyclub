@@ -160,6 +160,7 @@ body {
 /* FOOTER ******************************/
 
 #footer {
+    clear: both;
     text-align: center;
     font-size: 85%;
     color: #777;
