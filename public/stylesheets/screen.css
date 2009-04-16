@@ -96,7 +96,7 @@ body {
     text-align: left;
 }
 
-#body h1 {
+#body h2 {
     color: #222;
     font-size: 48px;
     text-align: right;
@@ -104,7 +104,7 @@ body {
     border-bottom: 1px solid #666;
 }
 
-#body h2 {
+#body h3 {
     font-size: 32px;
     text-align: left;
     margin: 0 0 5px 0;
