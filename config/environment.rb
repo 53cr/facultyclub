@@ -15,7 +15,6 @@ Radiant::Initializer.run do |config|
   # -- all .rb files in that directory are automatically loaded.
   # See Rails::Configuration for more options.
 
-  config.action_controller.page_cache_directory = "#{RAILS_ROOT}/public/radiant-cache"
     
   # Skip frameworks you're not going to use (only works if using vendor/rails).
   # To use Rails without a database, you must remove the Active Record framework
@@ -57,7 +56,7 @@ Radiant::Initializer.run do |config|
   # Enable page/fragment caching by setting a file-based store
   # (remember to create the caching directory and make it readable to the application)
   # config.action_controller.fragment_cache_store = :file_store, "#{RAILS_ROOT}/fragment_cache"
-  config.action_controller.page_cache_directory = "#{RAILS_ROOT}/cache"
+  config.action_controller.page_cache_directory = "#{RAILS_ROOT}/public/radiant-cache"
   
   # Activate observers that should always be running
   config.active_record.observers = :user_action_observer
