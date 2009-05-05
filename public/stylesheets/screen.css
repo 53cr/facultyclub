@@ -95,6 +95,8 @@ body {
 #body {
     margin: 0 15px 0 15px;
     text-align: left;
+    float:left;
+    width: 553px;
 }
 
 #body a {
@@ -241,3 +243,6 @@ body {
     margin-left: -10px;
     font-size: 12px;
 }
+
+
+
